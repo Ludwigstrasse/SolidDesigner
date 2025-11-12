@@ -1,5 +1,6 @@
 <RCC>
 <qresource prefix="/">
     <file>images/Alice_Splash_912x513.png</file>
+    <file>images/SolidDesigner_splash_camel_912x513.png</file>
 </qresource>
 </RCC>

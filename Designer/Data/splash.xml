@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Splash>
-  <Image src=":/images/Alice_Splash_912x513.png" scale="fit" smooth="true"/>
+  <Image src=":/images/SolidDesigner_splash_camel_912x513.png" scale="fit" smooth="true"/>
   <Variants>
     <Variant minDpr="1.75" maxDpr="2.5">
       <Image src=":/images/Alice_Splash_912x513@2x.png" devicePixelRatio="2.0"/>
     </Variant>
   </Variants>
-  <Progress visible="true" rect="60,468,792,8" fgColor="#FF9E00" bgColor="#40000000" radius="4"/>
+  <Progress visible="true" rect="60,468,792,8" fgColor="#FF9E00" bgColor="#40000000" radius="4" indeterminate="true"/>
   <Message textColor="#E0FFFFFF" x="60" y="440" align="left|vcenter" wrapWidth="780">
     <Font family="Microsoft YaHei" size="13" weight="600"/>
   </Message>
