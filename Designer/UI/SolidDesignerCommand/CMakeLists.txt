@@ -8,6 +8,16 @@ message("*--*--*--*--*--*--*--*--*--*--*--*--*--Start SolidDesignerCommand--*--*
 add_definitions(-DSOLID_DESIGNER_UI_HOME)
 add_definitions(-DSOLID_DESIGNER_COMMAND_HOME)
 
+message("CMAKE_SOURCE_DIR = ${CMAKE_SOURCE_DIR}")
+# 先指定你项目内置的 Python 解释器
+set(_SD_PY_ROOT "${CMAKE_SOURCE_DIR}/ToolChain/Python310")
+set(Python3_EXECUTABLE "${_SD_PY_ROOT}/python.exe" CACHE FILEPATH "SolidDesigner bundled Python" FORCE)
+
+# 然后再找 Python3
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
+
+message(STATUS "Using Python3_EXECUTABLE = ${Python3_EXECUTABLE}")
+
 message("${PROJECT_SOURCE_DIR}")
 
 set(ABS_SDC "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerCommand")
@@ -99,14 +109,15 @@ endif()
 #-----------------------------------------------------------------------------
 # Automatically generate SolidDesignerCommands.h
 #-----------------------------------------------------------------------------
-set(COMMANDS_XML  ${CMAKE_SOURCE_DIR}/config/CommandsConfig.xml)
-set(COMMANDS_GEN_DIR ${CMAKE_BINARY_DIR}/generated/$<CONFIG>)
-set(COMMANDS_HDR  ${COMMANDS_GEN_DIR}/SolidDesignerCommands.h)
-set(COMMANDS_PY   ${CMAKE_SOURCE_DIR}/tools/generate_solid_designer_commands.py)
+set(COMMANDS_XML  ${PROJECT_SOURCE_DIR}/Designer/Data/CommandsConfig.xml)
+set(COMMANDS_HDR  ${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerCommand/SolidDesignerCommands.h)
+set(COMMANDS_PY   ${CMAKE_SOURCE_DIR}/Designer/Data/Scripts/generate_solid_designer_commands.py)
+
+message(STATUS "COMMANDS_XML = ${COMMANDS_XML}")
+message(STATUS "COMMANDS_PY  = ${COMMANDS_PY}")
 
 add_custom_command(
   OUTPUT  ${COMMANDS_HDR}
-  COMMAND ${CMAKE_COMMAND} -E make_directory ${COMMANDS_GEN_DIR}
   COMMAND ${Python3_EXECUTABLE} ${COMMANDS_PY}
           --xml ${COMMANDS_XML}
           --out ${COMMANDS_HDR}
@@ -116,8 +127,6 @@ add_custom_command(
 )
 
 add_custom_target(GenerateSolidDesignerCommands DEPENDS ${COMMANDS_HDR})
-
-target_include_directories(SolidDesignerCommand PRIVATE ${COMMANDS_GEN_DIR})
 add_dependencies(SolidDesignerCommand GenerateSolidDesignerCommands)
 
 # 可选：让 IDE 看到生成文件

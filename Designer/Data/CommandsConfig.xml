@@ -229,7 +229,6 @@
         <command id="model.slot"
                  label="Slot"
                  tooltip="Create slot features"
-        <command id="model.chamfer"
                  category="modeling"
                  icon="icons/model/slot.svg"
                  environments="part,sheet"/>
