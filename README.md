@@ -232,6 +232,8 @@ Use `-DSD_WITH_<LIB>=ON/OFF` CMake options (see `CMakeLists.txt`) to toggle modu
 
 ## Getting Started
 
+A typical workflow target (end state):
+
 1. **Create a project** and set default units/tolerances.
 2. **Sketch** on a plane; use constraints/dimensions.
 3. Create features: **Extrude**, **Revolve**, **Fillet**, **Shell**, **Pattern**…
@@ -255,10 +257,22 @@ Use `-DSD_WITH_<LIB>=ON/OFF` CMake options (see `CMakeLists.txt`) to toggle modu
 
 ## Data & File Formats
 
-- **Native Project**: a structured, versioned project format (TBD; JSON + binary payloads or similar).
-- **CAD Interop**: STEP/IGES import/export (others as available through adapters).
-- **Mesh/Results**: standard mesh/results formats for external solvers/post (VTK, MED, etc., planned).
-- **Units**: consistent unit system with explicit metadata; dimensioned parameters in expressions.
+### Native project format (in progress)
+
+The native format is intended to be:
+
+- **Structured**: metadata + typed payloads (geometry, mesh, results, thumbnails, etc.)
+- **Versioned**: schema versioning with explicit upgrade pipeline
+- **Incremental-friendly**: designed for partial reload and future cloud/workspace workflows
+- **Stable-identity aware**: object IDs survive save/load, copy/paste, and upgrades
+
+> The public wiki will host the canonical specification once the format stabilizes.
+
+### Interoperability (planned / incremental)
+
+- **CAD Interop**: STEP/IGES import/export (others via adapters)
+- **Mesh/Results**: standard mesh/results formats for external solvers/post (VTK, MED, etc., planned)
+- **Units**: consistent unit system with explicit metadata; dimensioned parameters in expressions
 
 ---
 
@@ -273,21 +287,28 @@ Use `-DSD_WITH_<LIB>=ON/OFF` CMake options (see `CMakeLists.txt`) to toggle modu
 
 ## Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-- Review open issues on **JIRA** and the **GitHub Wiki** for context.
-- Discuss larger proposals in issues or on the wiki before opening a PR.
-- Follow the project’s **code style** (clang‑format file incoming) and include **unit tests**.
-- Keep commits small and well‑described; link to JIRA tickets where applicable.
+- Review JIRA epics/tasks and the GitHub Wiki for context.
+- Discuss larger proposals before opening a PR.
+- Follow the project’s code style (clang-format file planned) and include unit tests.
+- Keep commits small and well-described; link to JIRA tickets where applicable.
 
-> Please see `CONTRIBUTING.md` (to be added) and `CODE_OF_CONDUCT.md` (to be added).
+Suggested first contributions:
+
+- Fix build issues on a specific platform/compiler
+- Add focused tests (geometry, persistence, constraint solving)
+- Add documentation: design notes, diagrams, or minimal “how it works” sections
+
+> Repository-level contributor docs (planned): `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
 ---
 
 ## License
 
-Open‑source license  (GNU General Public License v3.0).  
-The final license will be published in `LICENSE`. Until then, assume **source is for evaluation and development only**.
+This repository is licensed under **GNU GPL v3.0**. See `LICENSE` for the full text.
+
+> Note: third‑party libraries may have their own licenses; ensure compliance when redistributing binaries.
 
 ---
 
@@ -301,7 +322,7 @@ Special thanks to contributors and researchers in CAD/CAE/CFD/optimization.
 ## FAQ
 
 **How close is this to production tools like Creo?**  
-The aspiration is parity for core workflows with a modern, open architecture. Today the project is pre‑alpha; many features are WIP.
+The aspiration is parity for core workflows with a modern, open architecture. Today the project is pre‑alpha; many capabilities are WIP.
 
 **Is there a scripting API?**  
 A Python API is planned. Early internal scaffolding exists; public API is forthcoming.
@@ -310,7 +331,7 @@ A Python API is planned. Early internal scaffolding exists; public API is forthc
 Early in‑house solvers are being prototyped. Adapters to external solvers (e.g., meshers/post) are planned.
 
 **Will AI features require internet access?**  
-No. The intent is to support **offline** inference with local models, with optional cloud integrations.
+No. The intent is to support offline inference with local models, with optional cloud integrations.
 
 **Where can I track progress?**  
 JIRA (roadmap/backlog) and the public GitHub wiki. Detailed design docs are in Confluence (access required).
