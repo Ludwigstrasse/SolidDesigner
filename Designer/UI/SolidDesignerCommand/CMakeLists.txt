@@ -131,16 +131,14 @@ add_custom_command(
   COMMENT "Generating SolidDesignerCommands.h"
 )
 
-add_custom_target(GenerateSolidDesignerCommands DEPENDS ${COMMANDS_HDR})
-add_dependencies(SolidDesignerCommand GenerateSolidDesignerCommands)
+add_custom_target(SolidDesignerCommandsId DEPENDS ${COMMANDS_HDR})
+add_dependencies(SolidDesignerCommand SolidDesignerCommandsId)
 
 # 可选：让 IDE 看到生成文件
 target_sources(SolidDesignerCommand PRIVATE ${COMMANDS_HDR})
 set_source_files_properties(${COMMANDS_HDR} PROPERTIES GENERATED TRUE)
 
-
-
-
+set_target_properties(SolidDesignerCommandsId PROPERTIES FOLDER "Designer/UI")
 
 
 #-----------------------------------------------------------------------------

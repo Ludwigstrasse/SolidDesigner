@@ -181,7 +181,7 @@ add_custom_command(TARGET ${PROJECT_NAME} PRE_BUILD
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Designer/APP")
-
+set_target_properties(SolidDesignerRes PROPERTIES FOLDER "Designer/APP")
 
 set (CMAKE_INSTALL_PREFIX "${INSTALL_DIR}/INSTALL" CACHE INTERNAL "" FORCE)
 
