@@ -11,7 +11,7 @@ message("*--*--*--*--*--*--*--*--*--*--*--*--Start Top Level CmakeList*--*--*--*
 #-----------------------------------------------------------------------------
 # 工程属性设置
 #-----------------------------------------------------------------------------
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 # 设置项目名称 语言
 project(SolidDesigner VERSION 1.1.0  LANGUAGES CXX  DESCRIPTION "SolidRender is a parametric modeling software")
 
@@ -41,6 +41,7 @@ set(CMAKE_USE_MAKE_RULES_OVERRIDE_CXX
 #-----------------------------------------------------------------------------
 # 检测操作系统
 #-----------------------------------------------------------------------------
+message("CMAKE_SYSTEM_NAME = ${CMAKE_SYSTEM_NAME}")
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set(SOLIDRENDER_LINUX True)
     
@@ -235,5 +236,8 @@ add_subdirectory(externals)
 
 # 单元测试
 add_subdirectory(UnitTest)
+
+# Internal demos
+add_subdirectory(Demos)
 
 message("*--*--*--*--*--*--*--*--*--*--*--End Top Level CmakeList--*--*--*--*--*--*--*--*--*--*--*--*--*")
