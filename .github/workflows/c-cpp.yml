@@ -12,12 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Configure with CMake (headless)
+      run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DSD_BUILD_DESIGNER=OFF -DSD_BUILD_DEMOS=OFF
+
+    - name: Build
+      run: cmake --build build --config Release --parallel

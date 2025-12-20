@@ -225,8 +225,13 @@ set(SPDLOG_FMT_EXTERNAL OFF CACHE BOOL "" FORCE)
 #-----------------------------------------------------------------------------
 # 定义源代码的路径
 #-----------------------------------------------------------------------------
-# APPS 目录
-add_subdirectory(Designer)
+# APPS 目录（可选：需要 Qt）
+option(SD_BUILD_DESIGNER "Build the SolidDesigner GUI application (requires Qt)" ON)
+if(SD_BUILD_DESIGNER)
+  add_subdirectory(Designer)
+else()
+  message(STATUS "Skipping Designer application build (SD_BUILD_DESIGNER=OFF)")
+endif()
 
 # 平台层
 add_subdirectory(Alice)
@@ -237,7 +242,14 @@ add_subdirectory(externals)
 # 单元测试
 add_subdirectory(UnitTest)
 
-# Internal demos
-add_subdirectory(Demos)
+# Internal demos（可选：部分示例依赖 Qt）
+option(SD_BUILD_DEMOS "Build demo targets (some require Qt)" ON)
+if(SD_BUILD_DEMOS)
+  add_subdirectory(Demos)
+else()
+  message(STATUS "Skipping demo targets (SD_BUILD_DEMOS=OFF)")
+endif()
+
+
 
 message("*--*--*--*--*--*--*--*--*--*--*--End Top Level CmakeList--*--*--*--*--*--*--*--*--*--*--*--*--*")

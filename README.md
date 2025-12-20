@@ -68,6 +68,7 @@ Physical Structure
     |
     |----- Alice  (submodule)
     |         |
+    |         |---- Bootstrap
     |         |---- Core
     |         |---- Data
     |         |---- Interaction
@@ -79,6 +80,7 @@ Physical Structure
               |-- DATA
               |-- Interaction
               |-- UI
+              |-- Plugins
 ```
 
 ### Layered Architecture (high‑level)
@@ -199,6 +201,7 @@ cmake -S . -B build -G Ninja \
 
 cmake --build build --parallel
 cmake --install build
+**Headless/CI builds**: If you don't have Qt available, disable the GUI target with `-DSD_BUILD_DESIGNER=OFF`.
 ```
 
 Run the app (paths may differ):
