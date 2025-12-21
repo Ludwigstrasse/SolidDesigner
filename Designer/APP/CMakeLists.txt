@@ -234,9 +234,11 @@ install(DIRECTORY "${CMAKE_SOURCE_DIR}/source/resource/Script" DESTINATION "${IN
 # 链接第三方的库
 # @1、链接的动作需要放到add_library之后
 #-----------------------------------------------------------------------------
+
+find_package(OpenGL REQUIRED)
 message("PROJECT_NAME = ${PROJECT_NAME}")
 if(WIN32)
-    target_link_libraries(${PROJECT_NAME}
+    target_link_libraries(${PROJECT_NAME} PRIVATE
         glu32
         glew32
         opengl32
@@ -249,7 +251,7 @@ if(WIN32)
         AliceLaunchInterface
     )
 else()
-    target_link_libraries(${PROJECT_NAME}
+    target_link_libraries(${PROJECT_NAME} PRIVATE
         OpenGL::GL 
         OpenGL::GLU
         AliceCoreApplicationInterface
