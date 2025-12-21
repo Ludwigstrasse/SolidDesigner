@@ -168,20 +168,14 @@ else()
     message(FATAL_ERROR "Qt rcc not found. Ensure Qt is installed and rcc is in PATH.")
   endif()
 
-  set(SD_MAIN_QRC "${GEN_RCC_WD}/SolidDesignerRes.qrc") 
-  if(NOT EXISTS "${SD_MAIN_QRC}")
-    message(FATAL_ERROR "Main qrc not found: ${SD_MAIN_QRC}. Please set SD_MAIN_QRC explicitly.")
-  endif()
-
-  add_custom_command(OUTPUT "${SD_RCC_FILE}"
-    COMMAND ${CMAKE_COMMAND} -E make_directory "${SD_RCC_DIR}"
-    COMMAND ${CMAKE_COMMAND} -E echo ">>> GenerateRCC: ${QT_RCC_EXECUTABLE} -binary ${SD_MAIN_QRC} -o ${SD_RCC_FILE}"
-    COMMAND "${QT_RCC_EXECUTABLE}" -binary "${SD_MAIN_QRC}" -o "${SD_RCC_FILE}"
-    WORKING_DIRECTORY "${GEN_RCC_WD}"
-    DEPENDS "${SD_MAIN_QRC}" ${SD_QRCS}
-    VERBATIM
-  )
-
+  add_custom_command(
+  OUTPUT  "${SD_RCC_FILE}"
+  COMMAND ${CMAKE_COMMAND} -E make_directory "${SD_RCC_DIR}"
+  COMMAND "${QT_RCC_EXECUTABLE}" -binary ${SD_QRCS} -o "${SD_RCC_FILE}"
+  WORKING_DIRECTORY "${GEN_RCC_WD}"
+  DEPENDS ${SD_QRCS}
+  VERBATIM
+)
 endif()
 
  # 声明一个“资源生成”目标，并让可执行程序依赖它
