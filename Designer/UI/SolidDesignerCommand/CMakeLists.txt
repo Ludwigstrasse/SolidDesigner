@@ -13,8 +13,8 @@ if(WIN32)
 else()
     message("Here is linux python... ...")
    # Linux/macOS: use system python3
-    find_program(_PY3 NAMES python3 python REQUIRED)
-    set(Python3_EXECUTABLE "${_PY3}" CACHE FILEPATH "Python3 interpreter" FORCE)
+    #find_program(_PY3 NAMES python3 python REQUIRED)
+    #set(Python3_EXECUTABLE "${_PY3}" CACHE FILEPATH "Python3 interpreter" FORCE)
 
 endif()
 
