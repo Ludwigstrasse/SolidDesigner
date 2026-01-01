@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "lastActiveWorkbenchId": "workbench.home",
+  "preferredWorkbenchByDocType": 
+  {
+    "doc.part": "workbench.part",
+    "doc.assembly": "workbench.assembly",
+    "doc.drawing": "workbench.drawing",
+    "doc.none": "workbench.home"
+  },
+ "workbenchSwitcher": 
+  {
+    "orderedIds": ["workbench.home","workbench.part","workbench.assembly","workbench.drawing"],
+    "hiddenIds": [],
+    "pinnedIds": ["workbench.part","workbench.assembly"],
+    "showIcons": true,
+    "showText": true
+  },
+  "preferredWorkbenchByDocumentGuid": 
+  {
+    "{0F8F64D5-3C6E-4C88-9A9A-2E6B0C0E11B1}": "workbench.part"
+  },
+  "openViewPolicy": 
+  {
+    "openInitialViewsOnActivate": true,
+    "reuseExistingViews": true,
+    "openOnlyIfNoneOfKindExists": true
+  },
+
+  "layoutsByWorkbench":
+  {
+    "workbench.part":
+    {
+      "activeLayoutId": "default",
+      "layouts": 
+      {
+        "default": 
+        {
+          "dockState": "BASE64...",
+          "mdiState": "BASE64..."
+        },
+        "dualMonitor": 
+        { 
+          "dockState": "BASE64...",
+          "mdiState": "BASE64..." 
+        }
+      }
+    }
+  },
+  
+  "recentWorkbenches": 
+  [
+    "workbench.part",
+    "workbench.assembly"
+  ]
+}

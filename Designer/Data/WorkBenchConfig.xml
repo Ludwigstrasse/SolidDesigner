@@ -1,0 +1,128 @@
+<WorkbenchConfig version="1">
+  <Workbenches>
+    <Workbench id="workbench.home" displayName="Home" uiContext="ctx.home">
+      <AppliesTo>
+        <DocumentType id="doc.none"/>
+      </AppliesTo>
+      <RibbonPages>
+      </RibbonPages>
+      
+      <RibbonPages>
+      </RibbonPages>  
+      
+      <ClassicMenus>
+      </ClassicMenus>
+      
+      <DockPanels>
+        <Panel id="panel.history"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.startcenter"/>
+      </InitialViews>
+      
+      <!-- 可选 -->
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+
+    <Workbench id="workbench.part" displayName="Part" uiContext="ctx.part">
+      <AppliesTo>
+        <DocumentType id="doc.part"/>
+      </AppliesTo>
+      
+      <!-- 可选：未来把 ribbonPage/menuRoot 切到 workbench 级别管理 -->
+      <RibbonPages>
+        <Page id="ribbon.part.main"/>
+      </RibbonPages>
+      <ClassicMenus>
+        <Root id="menu.part"/>
+      </ClassicMenus>
+      <DockPanels>
+        <Panel id="panel.modeltree"/>
+        <Panel id="panel.properties"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.model3d"/>
+      </InitialViews>
+      
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+        <Layout id="dualMonitor" isDefault="false"/>
+      </LayoutProfiles>
+    </Workbench>
+
+    <Workbench id="workbench.assembly" displayName="Assembly" uiContext="ctx.assembly">
+      <AppliesTo>
+        <DocumentType id="doc.assembly"/>
+      </AppliesTo>
+ 
+      <RibbonPages>
+        <Page id="ribbon.assembly.main"/>
+      </RibbonPages>
+
+      <ClassicMenus>
+        <Root id="menu.assembly"/>
+      </ClassicMenus>
+
+      <DockPanels>
+        <Panel id="panel.assemblytree"/>
+        <Panel id="panel.properties"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.asm3d"/>
+      </InitialViews>
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+	
+    <Workbench id="workbench.drawing" displayName="Drawing" uiContext="ctx.drawing">
+      <AppliesTo>
+        <DocumentType id="doc.drawing"/>
+      </AppliesTo>
+      <DockPanels>
+        <Panel id="panel.drawingtree"/>
+        <Panel id="panel.properties"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.drawing"/>
+      </InitialViews>
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+	
+    <Workbench id="workbench.bim" displayName="Bim" uiContext="ctx.bim">
+      <AppliesTo>
+        <DocumentType id="doc.bim"/>
+      </AppliesTo>
+      <DockPanels>
+        <Panel id="panel.bimtree"/>
+        <Panel id="panel.properties"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.bim"/>
+      </InitialViews>
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+	
+    <Workbench id="workbench.debug" displayName="Debug" uiContext="ctx.debug">
+      <AppliesTo>
+        <DocumentType id="doc.debug"/>
+      </AppliesTo>
+      <DockPanels>
+        <Panel id="panel.debugtree"/>
+        <Panel id="panel.properties"/>
+      </DockPanels>
+      <InitialViews>
+        <ViewKind id="view.debug"/>
+      </InitialViews>
+      <LayoutProfiles>
+        <Layout id="default" isDefault="true"/>
+      </LayoutProfiles>
+    </Workbench>
+  </Workbenches>
+</WorkbenchConfig>

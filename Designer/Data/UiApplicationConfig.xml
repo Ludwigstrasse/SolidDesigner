@@ -6,6 +6,8 @@
   <Include href="TitleBarConfig.xml"/>
   <!-- functiona area config file -->
   <Include href="FunctionAreaConfig.xml"/>
+  <!-- workbench config file -->
+  <Include href="WorkBenchConfig.xml"/>
   
   <Theme darkMode="true">
     <Palette base="#121212" text="#E0E0E0" accent="#FF9E00"/>
