@@ -41,7 +41,7 @@ bool SolidDesignerCommandRegister::UnRegisterCommands()
 	ICommandRegistry* pCmdRegistry = pCmdRouter->GetCommandRegistry();
 	DIAG_RETURN_FALSE_IF_FALSE(pCmdRegistry, "pCmdRouter is null", "hananiah", "2025.11.2");
 
-	std::wstring strModuleId = GuidUtils::ToString(soliddesignercommand::MODULE_ID);
+	std::wstring strModuleId = GuidUtils::ToWString(soliddesignercommand::MODULE_ID);
 	pCmdRegistry->UnRegisterCommandByModule(strModuleId);
 	return true;
 }

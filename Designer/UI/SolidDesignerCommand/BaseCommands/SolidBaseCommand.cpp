@@ -9,14 +9,14 @@ using namespace sdr;
 
 AppCommandBase::AppCommandBase() noexcept
 	: m_id()
-	, m_strModuleId(GuidUtils::ToString(soliddesignercommand::MODULE_ID))
+	, m_strModuleId(GuidUtils::ToWString(soliddesignercommand::MODULE_ID))
 {
 
 }
 
 AppCommandBase::AppCommandBase(std::string id) noexcept
 	: m_id(std::move(id))
-	, m_strModuleId(GuidUtils::ToString(soliddesignercommand::MODULE_ID))
+	, m_strModuleId(GuidUtils::ToWString(soliddesignercommand::MODULE_ID))
 {
 
 }
