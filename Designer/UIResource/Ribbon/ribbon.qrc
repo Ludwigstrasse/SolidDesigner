@@ -1,0 +1,65 @@
+<RCC>
+  <qresource prefix="/Ribbon">
+    <file>home/data/light/png/16/open_last_session.png</file>
+    <file>home/data/light/png/16/select_working_directory.png</file>
+    <file>home/data/light/png/16/erase_not_displayed.png</file>
+    <file>home/data/light/png/32/open_last_session.png</file>
+    <file>home/data/light/png/32/select_working_directory.png</file>
+    <file>home/data/light/png/32/erase_not_displayed.png</file>
+    <file>home/data/light/png/48/open_last_session.png</file>
+    <file>home/data/light/png/48/select_working_directory.png</file>
+    <file>home/data/light/png/48/erase_not_displayed.png</file>
+    <file>home/data/light/png/64/open_last_session.png</file>
+    <file>home/data/light/png/64/select_working_directory.png</file>
+    <file>home/data/light/png/64/erase_not_displayed.png</file>
+    
+    <file>home/data/dark/png/16/open_last_session.png</file>
+    <file>home/data/dark/png/16/select_working_directory.png</file>
+    <file>home/data/dark/png/16/erase_not_displayed.png</file>
+    <file>home/data/dark/png/32/open_last_session.png</file>
+    <file>home/data/dark/png/32/select_working_directory.png</file>
+    <file>home/data/dark/png/32/erase_not_displayed.png</file>
+    <file>home/data/dark/png/48/open_last_session.png</file>
+    <file>home/data/dark/png/48/select_working_directory.png</file>
+    <file>home/data/dark/png/48/erase_not_displayed.png</file>
+    <file>home/data/dark/png/64/open_last_session.png</file>
+    <file>home/data/dark/png/64/select_working_directory.png</file>
+    <file>home/data/dark/png/64/erase_not_displayed.png</file>
+    
+    <file>home/settings/light/png/16/model_display.png</file>
+    <file>home/settings/light/png/16/system_appearance.png</file>
+    <file>home/settings/light/png/32/model_display.png</file>
+    <file>home/settings/light/png/32/system_appearance.png</file>
+    <file>home/settings/light/png/48/model_display.png</file>
+    <file>home/settings/light/png/48/system_appearance.png</file>
+    <file>home/settings/light/png/64/model_display.png</file>
+    <file>home/settings/light/png/64/system_appearance.png</file>
+    <file>home/settings/dark/png/16/model_display.png</file>
+    <file>home/settings/dark/png/16/system_appearance.png</file>
+    <file>home/settings/dark/png/32/model_display.png</file>
+    <file>home/settings/dark/png/32/system_appearance.png</file>
+    <file>home/settings/dark/png/48/model_display.png</file>
+    <file>home/settings/dark/png/48/system_appearance.png</file>
+    <file>home/settings/dark/png/64/model_display.png</file>
+    <file>home/settings/dark/png/64/system_appearance.png</file>
+    
+    <file>home/utilities/light/png/16/play_trail_file.png</file>
+    <file>home/utilities/light/png/32/play_trail_file.png</file>
+    <file>home/utilities/light/png/48/play_trail_file.png</file>
+    <file>home/utilities/light/png/64/play_trail_file.png</file>
+    <file>home/utilities/dark/png/16/play_trail_file.png</file>
+    <file>home/utilities/dark/png/32/play_trail_file.png</file>
+    <file>home/utilities/dark/png/48/play_trail_file.png</file>
+    <file>home/utilities/dark/png/64/play_trail_file.png</file>
+    
+    <file>home/utilities/light/png/16/auxiliary_applications.png</file>
+    <file>home/utilities/light/png/32/auxiliary_applications.png</file>
+    <file>home/utilities/light/png/48/auxiliary_applications.png</file>
+    <file>home/utilities/light/png/64/auxiliary_applications.png</file>
+    <file>home/utilities/dark/png/16/auxiliary_applications.png</file>
+    <file>home/utilities/dark/png/32/auxiliary_applications.png</file>
+    <file>home/utilities/dark/png/48/auxiliary_applications.png</file>
+    <file>home/utilities/dark/png/64/auxiliary_applications.png</file>
+    
+  </qresource>
+</RCC>

@@ -50,30 +50,10 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #============================================================================#
 #  给SolidRender这个工程配置第三方的库
 #============================================================================#
-if(WIN32)
-set(CMAKE_PREFIX_PATH "C:/Qt/Qt5.15.14/5.15.14/msvc2019_64")
-# 设置QT的头文件包含路径
-# 如果找不到环境变量QTDIR的路径，那么自己设置吧; 也可以在GUI交互界面上手动设置
-SET(QTDIR C:/Qt/Qt5.15.14/5.15.14/msvc2019_64)
-endif()
-
 find_package(Qt5 COMPONENTS Core Gui Widgets Network Quick Qml REQUIRED)
 
 
-# QT5头文件路径
 if(WIN32)
-    message("----------------qt5 files include directory--------------------")
-    include_directories(${QTDIR}/include)
-    include_directories(${QTDIR}/include/QtWidgets)
-    include_directories(${QTDIR}/include/QtCore)
-    include_directories(${QTDIR}/include/QtGui)
-    include_directories(${QTDIR}/include/QtOpenGL)
-    include_directories(${QTDIR}/include/QtMultimedia)
-    include_directories(${QTDIR}/include/QtQuick)
-    include_directories(${QTDIR}/include/QtQml)
-    include_directories(${QTDIR}/include/QtNetwork)
-    include_directories(${QTDIR}/mkspecs/win32-msvc)
-
     #-----------------------------------------------------------------------------
     # 添加需要链接的库文件目录LINK_DIRECTORIES
     # 例如QT库
@@ -183,10 +163,20 @@ add_custom_target(SolidDesignerRes ALL DEPENDS "${SD_RCC_FILE}")
 add_dependencies(${PROJECT_NAME} SolidDesignerRes)
 
 # 无论什么生成器，把 .rcc 复制到运行目录（等价于通用版 “Pre-Build”）
-add_custom_command(TARGET ${PROJECT_NAME} PRE_BUILD
+#add_custom_command(TARGET ${PROJECT_NAME} PRE_BUILD
+#  COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:${PROJECT_NAME}>/resources"
+#  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#          "${SD_RCC_FILE}" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/resources/SolidDesignerRes.rcc"
+#  VERBATIM
+#)
+
+# 生成后的部署（拷贝）——跟随 SolidDesignerRes，而不是跟随 exe
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:${PROJECT_NAME}>/resources"
+  COMMAND ${CMAKE_COMMAND} -E echo ">>> Deploy RCC: ${SD_RCC_FILE} -> $<TARGET_FILE_DIR:${PROJECT_NAME}>/resources/SolidDesignerRes.rcc"
   COMMAND ${CMAKE_COMMAND} -E copy_if_different
-          "${SD_RCC_FILE}" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/resources/SolidDesignerRes.rcc"
+          "${SD_RCC_FILE}"
+          "$<TARGET_FILE_DIR:${PROJECT_NAME}>/resources/SolidDesignerRes.rcc"
   VERBATIM
 )
 

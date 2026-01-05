@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IconLibraryConfig version="1.0">
+    <icon-library id="global" qrcPrefix="">
+        <!-- ============================================================= -->
+        <!-- TitleBar / Window / QAT icons (explicit light/dark variants)  -->
+        <!-- ============================================================= -->
+        <icon id="app">
+            <theme name="light" svg=":/TitleBar/brand/light/app.svg" png16=":/TitleBar/brand/light/png/16/app.png" png32=":/TitleBar/brand/light/png/32/app.png" png48=":/TitleBar/brand/light/png/48/app.png" png64=":/TitleBar/brand/light/png/64/app.png"/>
+            <theme name="dark" svg=":/TitleBar/brand/dark/app.svg" png16=":/TitleBar/brand/dark/png/16/app.png" png32=":/TitleBar/brand/dark/png/32/app.png" png48=":/TitleBar/brand/dark/png/48/app.png" png64=":/TitleBar/brand/dark/png/64/app.png"/>
+        </icon>
+        <icon id="file.new">
+            <theme name="light" svg=":/TitleBar/quick/light/new.svg" png16=":/TitleBar/quick/light/png/16/new.png" png32=":/TitleBar/quick/light/png/32/new.png" png48=":/TitleBar/quick/light/png/48/new.png" png64=":/TitleBar/quick/light/png/64/new.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/new.svg" png16=":/TitleBar/quick/dark/png/16/new.png" png32=":/TitleBar/quick/dark/png/32/new.png" png48=":/TitleBar/quick/dark/png/48/new.png" png64=":/TitleBar/quick/dark/png/64/new.png"/>
+        </icon>
+        <icon id="file.open">
+            <theme name="light" svg=":/TitleBar/quick/light/open.svg" png16=":/TitleBar/quick/light/png/16/open.png" png32=":/TitleBar/quick/light/png/32/open.png" png48=":/TitleBar/quick/light/png/48/open.png" png64=":/TitleBar/quick/light/png/64/open.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/open.svg" png16=":/TitleBar/quick/dark/png/16/open.png" png32=":/TitleBar/quick/dark/png/32/open.png" png48=":/TitleBar/quick/dark/png/48/open.png" png64=":/TitleBar/quick/dark/png/64/open.png"/>
+        </icon>
+        <icon id="save">
+            <theme name="light" svg=":/TitleBar/quick/light/save.svg" png16=":/TitleBar/quick/light/png/16/save.png" png32=":/TitleBar/quick/light/png/32/save.png" png48=":/TitleBar/quick/light/png/48/save.png" png64=":/TitleBar/quick/light/png/64/save.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/save.svg" png16=":/TitleBar/quick/dark/png/16/save.png" png32=":/TitleBar/quick/dark/png/32/save.png" png48=":/TitleBar/quick/dark/png/48/save.png" png64=":/TitleBar/quick/dark/png/64/save.png"/>
+        </icon>
+        <icon id="undo">
+            <theme name="light" svg=":/TitleBar/quick/light/undo.svg" png16=":/TitleBar/quick/light/png/16/undo.png" png32=":/TitleBar/quick/light/png/32/undo.png" png48=":/TitleBar/quick/light/png/48/undo.png" png64=":/TitleBar/quick/light/png/64/undo.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/undo.svg" png16=":/TitleBar/quick/dark/png/16/undo.png" png32=":/TitleBar/quick/dark/png/32/undo.png" png48=":/TitleBar/quick/dark/png/48/undo.png" png64=":/TitleBar/quick/dark/png/64/undo.png"/>
+        </icon>
+        <icon id="redo">
+            <theme name="light" svg=":/TitleBar/quick/light/redo.svg" png16=":/TitleBar/quick/light/png/16/redo.png" png32=":/TitleBar/quick/light/png/32/redo.png" png48=":/TitleBar/quick/light/png/48/redo.png" png64=":/TitleBar/quick/light/png/64/redo.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/redo.svg" png16=":/TitleBar/quick/dark/png/16/redo.png" png32=":/TitleBar/quick/dark/png/32/redo.png" png48=":/TitleBar/quick/dark/png/48/redo.png" png64=":/TitleBar/quick/dark/png/64/redo.png"/>
+        </icon>
+        <icon id="regen">
+            <theme name="light" svg=":/TitleBar/quick/light/regen.svg" png16=":/TitleBar/quick/light/png/16/regenerate.png" png32=":/TitleBar/quick/light/png/32/regenerate.png" png48=":/TitleBar/quick/light/png/48/regenerate.png" png64=":/TitleBar/quick/light/png/64/regenerate.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/regen.svg" png16=":/TitleBar/quick/dark/png/16/regenerate.png" png32=":/TitleBar/quick/dark/png/32/regenerate.png" png48=":/TitleBar/quick/dark/png/48/regenerate.png" png64=":/TitleBar/quick/dark/png/64/regenerate.png"/>
+        </icon>
+        <icon id="windows">
+            <theme name="light" svg=":/TitleBar/quick/light/windows.svg" png16=":/TitleBar/quick/light/png/16/windows.png" png32=":/TitleBar/quick/light/png/32/windows.png" png48=":/TitleBar/quick/light/png/48/windows.png" png64=":/TitleBar/quick/light/png/64/windows.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/windows.svg" png16=":/TitleBar/quick/dark/png/16/windows.png" png32=":/TitleBar/quick/dark/png/32/windows.png" png48=":/TitleBar/quick/dark/png/48/windows.png" png64=":/TitleBar/quick/dark/png/64/windows.png"/>
+        </icon>
+        <icon id="qat">
+            <theme name="light" svg=":/TitleBar/quick/light/quickaccess.svg" png16=":/TitleBar/quick/light/png/16/dropdown.png" png32=":/TitleBar/quick/light/png/32/dropdown.png" png48=":/TitleBar/quick/light/png/48/dropdown.png" png64=":/TitleBar/quick/light/png/64/dropdown.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/quickaccess.svg" png16=":/TitleBar/quick/dark/png/16/dropdown.png" png32=":/TitleBar/quick/dark/png/32/dropdown.png" png48=":/TitleBar/quick/dark/png/48/dropdown.png" png64=":/TitleBar/quick/dark/png/64/dropdown.png"/>
+        </icon>
+        <icon id="minimize">
+            <theme name="light" svg=":/TitleBar/window/light/minimize.svg" png16=":/TitleBar/window/light/png/16/minimize.png" png32=":/TitleBar/window/light/png/32/minimize.png" png48=":/TitleBar/window/light/png/48/minimize.png" png64=":/TitleBar/window/light/png/64/minimize.png"/>
+            <theme name="dark" svg=":/TitleBar/window/dark/minimize.svg" png16=":/TitleBar/window/dark/png/16/minimize.png" png32=":/TitleBar/window/dark/png/32/minimize.png" png48=":/TitleBar/window/dark/png/48/minimize.png" png64=":/TitleBar/window/dark/png/64/minimize.png"/>
+        </icon>
+        <icon id="maximize">
+            <theme name="light" svg=":/TitleBar/window/light/maximize.svg" png16=":/TitleBar/window/light/png/16/maximize.png" png32=":/TitleBar/window/light/png/32/maximize.png" png48=":/TitleBar/window/light/png/48/maximize.png" png64=":/TitleBar/window/light/png/64/maximize.png"/>
+            <theme name="dark" svg=":/TitleBar/window/dark/maximize.svg" png16=":/TitleBar/window/dark/png/16/maximize.png" png32=":/TitleBar/window/dark/png/32/maximize.png" png48=":/TitleBar/window/dark/png/48/maximize.png" png64=":/TitleBar/window/dark/png/64/maximize.png"/>
+        </icon>
+        <icon id="restore">
+            <theme name="light" svg=":/TitleBar/window/light/restore.svg" png16=":/TitleBar/window/light/png/16/restore.png" png32=":/TitleBar/window/light/png/32/restore.png" png48=":/TitleBar/window/light/png/48/restore.png" png64=":/TitleBar/window/light/png/64/restore.png"/>
+            <theme name="dark" svg=":/TitleBar/window/dark/restore.svg" png16=":/TitleBar/window/dark/png/16/restore.png" png32=":/TitleBar/window/dark/png/32/restore.png" png48=":/TitleBar/window/dark/png/48/restore.png" png64=":/TitleBar/window/dark/png/64/restore.png"/>
+        </icon>
+        <icon id="close">
+            <theme name="light" svg=":/TitleBar/window/light/close.svg" png16=":/TitleBar/window/light/png/16/close.png" png32=":/TitleBar/window/light/png/32/close.png" png48=":/TitleBar/window/light/png/48/close.png" png64=":/TitleBar/window/light/png/64/close.png"/>
+            <theme name="dark" svg=":/TitleBar/window/dark/close.svg" png16=":/TitleBar/window/dark/png/16/close.png" png32=":/TitleBar/window/dark/png/32/close.png" png48=":/TitleBar/window/dark/png/48/close.png" png64=":/TitleBar/window/dark/png/64/close.png"/>
+        </icon>
+
+
+        <!-- ============================================================= -->
+        <!-- Home-Ribbon  -->
+        <!-- ============================================================= -->
+         <icon id="home.open_last_session">
+           <theme name="light" png16=":/Ribbon/home/data/light/png/16/open_last_session.png" png32=":/Ribbon/home/data/light/png/32/open_last_session.png" png48=":/Ribbon/home/data/light/png/48/open_last_session.png" png64=":/Ribbon/home/data/light/png/64/open_last_session.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/data/dark/png/16/open_last_session.png" png32=":/Ribbon/home/data/dark/png/32/open_last_session.png" png48=":/Ribbon/home/data/dark/png/48/open_last_session.png" png64=":/Ribbon/home/data/dark/png/64/open_last_session.png"/>
+         </icon>
+         <icon id="home.select_working_directory">
+           <theme name="light" png16=":/Ribbon/home/data/light/png/16/select_working_directory.png" png32=":/Ribbon/home/data/light/png/32/select_working_directory.png" png48=":/Ribbon/home/data/light/png/48/select_working_directory.png" png64=":/Ribbon/home/data/light/png/64/select_working_directory.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/data/dark/png/16/select_working_directory.png" png32=":/Ribbon/home/data/dark/png/32/select_working_directory.png" png48=":/Ribbon/home/data/dark/png/48/select_working_directory.png" png64=":/Ribbon/home/data/dark/png/64/select_working_directory.png"/>
+         </icon>
+         <icon id="home.erase_not_displayed">
+           <theme name="light" png16=":/Ribbon/home/data/light/png/16/erase_not_displayed.png" png32=":/Ribbon/home/data/light/png/32/erase_not_displayed.png" png48=":/Ribbon/home/data/light/png/48/erase_not_displayed.png" png64=":/Ribbon/home/data/light/png/64/erase_not_displayed.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/data/dark/png/16/erase_not_displayed.png" png32=":/Ribbon/home/data/dark/png/32/erase_not_displayed.png" png48=":/Ribbon/home/data/dark/png/48/erase_not_displayed.png" png64=":/Ribbon/home/data/dark/png/64/erase_not_displayed.png"/>
+         </icon>
+         <icon id="home.model_display">
+           <theme name="light" png16=":/Ribbon/home/settings/light/png/16/model_display.png" png32=":/Ribbon/home/settings/light/png/32/model_display.png" png48=":/Ribbon/home/settings/light/png/48/model_display.png" png64=":/Ribbon/home/settings/light/png/64/model_display.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/settings/dark/png/16/model_display.png" png32=":/Ribbon/home/settings/dark/png/32/model_display.png" png48=":/Ribbon/home/settings/dark/png/48/model_display.png" png64=":/Ribbon/home/settings/dark/png/64/model_display.png"/>
+         </icon>
+         <icon id="home.system_appearance">
+           <theme name="light" png16=":/Ribbon/home/settings/light/png/16/system_appearance.png" png32=":/Ribbon/home/settings/light/png/32/system_appearance.png" png48=":/Ribbon/home/settings/light/png/48/system_appearance.png" png64=":/Ribbon/home/settings/light/png/64/system_appearance.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/settings/dark/png/16/system_appearance.png" png32=":/Ribbon/home/settings/dark/png/32/system_appearance.png" png48=":/Ribbon/home/settings/dark/png/48/system_appearance.png" png64=":/Ribbon/home/settings/dark/png/64/system_appearance.png"/>
+         </icon>
+         <icon id="home.play_trail_file">
+           <theme name="light" png16=":/Ribbon/home/utilities/light/png/16/play_trail_file.png" png32=":/Ribbon/home/utilities/light/png/32/play_trail_file.png" png48=":/Ribbon/home/utilities/light/png/48/play_trail_file.png" png64=":/Ribbon/home/utilities/light/png/64/play_trail_file.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/utilities/dark/png/16/play_trail_file.png" png32=":/Ribbon/home/utilities/dark/png/32/play_trail_file.png" png48=":/Ribbon/home/utilities/dark/png/48/play_trail_file.png" png64=":/Ribbon/home/utilities/dark/png/64/play_trail_file.png"/>
+         </icon>
+         <icon id="home.aux_application">
+           <theme name="light" png16=":/Ribbon/home/utilities/light/png/16/auxiliary_applications.png" png32=":/Ribbon/home/utilities/light/png/32/auxiliary_applications.png" png48=":/Ribbon/home/utilities/light/png/48/auxiliary_applications.png" png64=":/Ribbon/home/utilities/light/png/64/auxiliary_applications.png"/>
+           <theme name="dark"  png16=":/Ribbon/home/utilities/dark/png/16/auxiliary_applications.png" png32=":/Ribbon/home/utilities/dark/png/32/auxiliary_applications.png" png48=":/Ribbon/home/utilities/dark/png/48/auxiliary_applications.png" png64=":/Ribbon/home/utilities/dark/png/64/auxiliary_applications.png"/>
+         </icon>
+
+        <!-- ============================================================= -->
+        <!-- Shared command icons (theme-agnostic; duplicated for both)     -->
+        <!-- ============================================================= -->
+        <icon id="analysis.body_check">
+            <theme name="light" svg="icons/analysis/body_check.svg"/>
+            <theme name="dark" svg="icons/analysis/body_check.svg"/>
+        </icon>
+        <icon id="analysis.interference">
+            <theme name="light" svg="icons/analysis/interference.svg"/>
+            <theme name="dark" svg="icons/analysis/interference.svg"/>
+        </icon>
+        <icon id="analysis.mass">
+            <theme name="light" svg="icons/analysis/mass.svg"/>
+            <theme name="dark" svg="icons/analysis/mass.svg"/>
+        </icon>
+        <icon id="app.assembly">
+            <theme name="light" svg="icons/app/assembly.svg"/>
+            <theme name="dark" svg="icons/app/assembly.svg"/>
+        </icon>
+        <icon id="app.bim">
+            <theme name="light" svg="icons/app/bim.svg"/>
+            <theme name="dark" svg="icons/app/bim.svg"/>
+        </icon>
+        <icon id="app.part_modeling">
+            <theme name="light" svg="icons/app/part_modeling.svg"/>
+            <theme name="dark" svg="icons/app/part_modeling.svg"/>
+        </icon>
+        <icon id="app.sheet_metal">
+            <theme name="light" svg="icons/app/sheet_metal.svg"/>
+            <theme name="dark" svg="icons/app/sheet_metal.svg"/>
+        </icon>
+        <icon id="app.ship">
+            <theme name="light" svg="icons/app/ship.svg"/>
+            <theme name="dark" svg="icons/app/ship.svg"/>
+        </icon>
+        <icon id="app.sketch">
+            <theme name="light" svg="icons/app/sketch.svg"/>
+            <theme name="dark" svg="icons/app/sketch.svg"/>
+        </icon>
+        <icon id="asm.add_component">
+            <theme name="light" svg="icons/asm/add_component.svg"/>
+            <theme name="dark" svg="icons/asm/add_component.svg"/>
+        </icon>
+        <icon id="asm.align">
+            <theme name="light" svg="icons/asm/align.svg"/>
+            <theme name="dark" svg="icons/asm/align.svg"/>
+        </icon>
+        <icon id="asm.arrange">
+            <theme name="light" svg="icons/asm/arrange.svg"/>
+            <theme name="dark" svg="icons/asm/arrange.svg"/>
+        </icon>
+        <icon id="asm.constraint">
+            <theme name="light" svg="icons/asm/constraint.svg"/>
+            <theme name="dark" svg="icons/asm/constraint.svg"/>
+        </icon>
+        <icon id="asm.distance">
+            <theme name="light" svg="icons/asm/distance.svg"/>
+            <theme name="dark" svg="icons/asm/distance.svg"/>
+        </icon>
+        <icon id="asm.explode">
+            <theme name="light" svg="icons/asm/explode.svg"/>
+            <theme name="dark" svg="icons/asm/explode.svg"/>
+        </icon>
+        <icon id="asm.mate">
+            <theme name="light" svg="icons/asm/mate.svg"/>
+            <theme name="dark" svg="icons/asm/mate.svg"/>
+        </icon>
+        <icon id="asm.new_component">
+            <theme name="light" svg="icons/asm/new_component.svg"/>
+            <theme name="dark" svg="icons/asm/new_component.svg"/>
+        </icon>
+        <icon id="asm.replace_component">
+            <theme name="light" svg="icons/asm/replace_component.svg"/>
+            <theme name="dark" svg="icons/asm/replace_component.svg"/>
+        </icon>
+        <icon id="asm.unexplode">
+            <theme name="light" svg="icons/asm/unexplode.svg"/>
+            <theme name="dark" svg="icons/asm/unexplode.svg"/>
+        </icon>
+        <icon id="curve.arc">
+            <theme name="light" svg="icons/curve/arc.svg"/>
+            <theme name="dark" svg="icons/curve/arc.svg"/>
+        </icon>
+        <icon id="curve.arc_3pt_tangent_end">
+            <theme name="light" svg="icons/curve/arc_3pt_tangent_end.svg"/>
+            <theme name="dark" svg="icons/curve/arc_3pt_tangent_end.svg"/>
+        </icon>
+        <icon id="curve.arc_3tangent">
+            <theme name="light" svg="icons/curve/arc_3tangent.svg"/>
+            <theme name="dark" svg="icons/curve/arc_3tangent.svg"/>
+        </icon>
+        <icon id="curve.arc_center_ends">
+            <theme name="light" svg="icons/curve/arc_center_ends.svg"/>
+            <theme name="dark" svg="icons/curve/arc_center_ends.svg"/>
+        </icon>
+        <icon id="curve.arc_concentric">
+            <theme name="light" svg="icons/curve/arc_concentric.svg"/>
+            <theme name="dark" svg="icons/curve/arc_concentric.svg"/>
+        </icon>
+        <icon id="curve.arc_conic">
+            <theme name="light" svg="icons/curve/arc_conic.svg"/>
+            <theme name="dark" svg="icons/curve/arc_conic.svg"/>
+        </icon>
+        <icon id="curve.centerline">
+            <theme name="light" svg="icons/curve/centerline.svg"/>
+            <theme name="dark" svg="icons/curve/centerline.svg"/>
+        </icon>
+        <icon id="curve.circle">
+            <theme name="light" svg="icons/curve/circle.svg"/>
+            <theme name="dark" svg="icons/curve/circle.svg"/>
+        </icon>
+        <icon id="curve.circle_3pt">
+            <theme name="light" svg="icons/curve/circle_3pt.svg"/>
+            <theme name="dark" svg="icons/curve/circle_3pt.svg"/>
+        </icon>
+        <icon id="curve.circle_3tangent">
+            <theme name="light" svg="icons/curve/circle_3tangent.svg"/>
+            <theme name="dark" svg="icons/curve/circle_3tangent.svg"/>
+        </icon>
+        <icon id="curve.circle_center_point">
+            <theme name="light" svg="icons/curve/circle_center_point.svg"/>
+            <theme name="dark" svg="icons/curve/circle_center_point.svg"/>
+        </icon>
+        <icon id="curve.circle_concentric">
+            <theme name="light" svg="icons/curve/circle_concentric.svg"/>
+            <theme name="dark" svg="icons/curve/circle_concentric.svg"/>
+        </icon>
+        <icon id="curve.ellipse">
+            <theme name="light" svg="icons/curve/ellipse.svg"/>
+            <theme name="dark" svg="icons/curve/ellipse.svg"/>
+        </icon>
+        <icon id="curve.ellipse_axis_ends">
+            <theme name="light" svg="icons/curve/ellipse_axis_ends.svg"/>
+            <theme name="dark" svg="icons/curve/ellipse_axis_ends.svg"/>
+        </icon>
+        <icon id="curve.ellipse_center_axis">
+            <theme name="light" svg="icons/curve/ellipse_center_axis.svg"/>
+            <theme name="dark" svg="icons/curve/ellipse_center_axis.svg"/>
+        </icon>
+        <icon id="curve.extend">
+            <theme name="light" svg="icons/curve/extend.svg"/>
+            <theme name="dark" svg="icons/curve/extend.svg"/>
+        </icon>
+        <icon id="curve.fillet">
+            <theme name="light" svg="icons/curve/fillet.svg"/>
+            <theme name="dark" svg="icons/curve/fillet.svg"/>
+        </icon>
+        <icon id="curve.fit_spline">
+            <theme name="light" svg="icons/curve/fit_spline.svg"/>
+            <theme name="dark" svg="icons/curve/fit_spline.svg"/>
+        </icon>
+        <icon id="curve.join">
+            <theme name="light" svg="icons/curve/join.svg"/>
+            <theme name="dark" svg="icons/curve/join.svg"/>
+        </icon>
+        <icon id="curve.line">
+            <theme name="light" svg="icons/curve/line.svg"/>
+            <theme name="dark" svg="icons/curve/line.svg"/>
+        </icon>
+        <icon id="curve.offset">
+            <theme name="light" svg="icons/curve/offset.svg"/>
+            <theme name="dark" svg="icons/curve/offset.svg"/>
+        </icon>
+        <icon id="curve.parallelogram">
+            <theme name="light" svg="icons/curve/parallelogram.svg"/>
+            <theme name="dark" svg="icons/curve/parallelogram.svg"/>
+        </icon>
+        <icon id="curve.point">
+            <theme name="light" svg="icons/curve/point.svg"/>
+            <theme name="dark" svg="icons/curve/point.svg"/>
+        </icon>
+        <icon id="curve.rect_center">
+            <theme name="light" svg="icons/curve/rect_center.svg"/>
+            <theme name="dark" svg="icons/curve/rect_center.svg"/>
+        </icon>
+        <icon id="curve.rect_corner">
+            <theme name="light" svg="icons/curve/rect_corner.svg"/>
+            <theme name="dark" svg="icons/curve/rect_corner.svg"/>
+        </icon>
+        <icon id="curve.rect_slanted">
+            <theme name="light" svg="icons/curve/rect_slanted.svg"/>
+            <theme name="dark" svg="icons/curve/rect_slanted.svg"/>
+        </icon>
+        <icon id="curve.rectangle">
+            <theme name="light" svg="icons/curve/rectangle.svg"/>
+            <theme name="dark" svg="icons/curve/rectangle.svg"/>
+        </icon>
+        <icon id="curve.spline_through">
+            <theme name="light" svg="icons/curve/spline_through.svg"/>
+            <theme name="dark" svg="icons/curve/spline_through.svg"/>
+        </icon>
+        <icon id="curve.studio_spline">
+            <theme name="light" svg="icons/curve/studio_spline.svg"/>
+            <theme name="dark" svg="icons/curve/studio_spline.svg"/>
+        </icon>
+        <icon id="curve.trim">
+            <theme name="light" svg="icons/curve/trim.svg"/>
+            <theme name="dark" svg="icons/curve/trim.svg"/>
+        </icon>
+        <icon id="datum.axis">
+            <theme name="light" svg="icons/datum/axis.svg"/>
+            <theme name="dark" svg="icons/datum/axis.svg"/>
+        </icon>
+        <icon id="datum.cs">
+            <theme name="light" svg="icons/datum/cs.svg"/>
+            <theme name="dark" svg="icons/datum/cs.svg"/>
+        </icon>
+        <icon id="datum.curve">
+            <theme name="light" svg="icons/datum/curve.svg"/>
+            <theme name="dark" svg="icons/datum/curve.svg"/>
+        </icon>
+        <icon id="datum.default_cs">
+            <theme name="light" svg="icons/datum/default_cs.svg"/>
+            <theme name="dark" svg="icons/datum/default_cs.svg"/>
+        </icon>
+        <icon id="datum.graph">
+            <theme name="light" svg="icons/datum/graph.svg"/>
+            <theme name="dark" svg="icons/datum/graph.svg"/>
+        </icon>
+        <icon id="datum.offset_planes">
+            <theme name="light" svg="icons/datum/offset_planes.svg"/>
+            <theme name="dark" svg="icons/datum/offset_planes.svg"/>
+        </icon>
+        <icon id="datum.plane">
+            <theme name="light" svg="icons/datum/plane.svg"/>
+            <theme name="dark" svg="icons/datum/plane.svg"/>
+        </icon>
+        <icon id="datum.point">
+            <theme name="light" svg="icons/datum/point.svg"/>
+            <theme name="dark" svg="icons/datum/point.svg"/>
+        </icon>
+        <icon id="datum.reference">
+            <theme name="light" svg="icons/datum/reference.svg"/>
+            <theme name="dark" svg="icons/datum/reference.svg"/>
+        </icon>
+        <icon id="datum.ribbon">
+            <theme name="light" svg="icons/datum/ribbon.svg"/>
+            <theme name="dark" svg="icons/datum/ribbon.svg"/>
+        </icon>
+        <icon id="display.hidden_line">
+            <theme name="light" svg="icons/display/hidden_line.svg"/>
+            <theme name="dark" svg="icons/display/hidden_line.svg"/>
+        </icon>
+        <icon id="display.hide">
+            <theme name="light" svg="icons/display/hide.svg"/>
+            <theme name="dark" svg="icons/display/hide.svg"/>
+        </icon>
+        <icon id="display.isolate">
+            <theme name="light" svg="icons/display/isolate.svg"/>
+            <theme name="dark" svg="icons/display/isolate.svg"/>
+        </icon>
+        <icon id="display.shaded">
+            <theme name="light" svg="icons/display/shaded.svg"/>
+            <theme name="dark" svg="icons/display/shaded.svg"/>
+        </icon>
+        <icon id="display.shaded_edges">
+            <theme name="light" svg="icons/display/shaded_edges.svg"/>
+            <theme name="dark" svg="icons/display/shaded_edges.svg"/>
+        </icon>
+        <icon id="display.show">
+            <theme name="light" svg="icons/display/show.svg"/>
+            <theme name="dark" svg="icons/display/show.svg"/>
+        </icon>
+        <icon id="display.wireframe">
+            <theme name="light" svg="icons/display/wireframe.svg"/>
+            <theme name="dark" svg="icons/display/wireframe.svg"/>
+        </icon>
+        <icon id="edit.copy">
+            <theme name="light" svg="icons/edit/copy.svg"/>
+            <theme name="dark" svg="icons/edit/copy.svg"/>
+        </icon>
+        <icon id="edit.cut">
+            <theme name="light" svg="icons/edit/cut.svg"/>
+            <theme name="dark" svg="icons/edit/cut.svg"/>
+        </icon>
+        <icon id="edit.delete">
+            <theme name="light" svg="icons/edit/delete.svg"/>
+            <theme name="dark" svg="icons/edit/delete.svg"/>
+        </icon>
+        <icon id="edit.paste">
+            <theme name="light" svg="icons/edit/paste.svg"/>
+            <theme name="dark" svg="icons/edit/paste.svg"/>
+        </icon>
+        <icon id="edit.redo">
+            <theme name="light" svg="icons/edit/redo.svg"/>
+            <theme name="dark" svg="icons/edit/redo.svg"/>
+        </icon>
+        <icon id="edit.select_all">
+            <theme name="light" svg="icons/edit/select_all.svg"/>
+            <theme name="dark" svg="icons/edit/select_all.svg"/>
+        </icon>
+        <icon id="edit.undo">
+            <theme name="light" svg="icons/edit/undo.svg"/>
+            <theme name="dark" svg="icons/edit/undo.svg"/>
+        </icon>
+        <icon id="file.close">
+            <theme name="light" svg="icons/file/close.svg"/>
+            <theme name="dark" svg="icons/file/close.svg"/>
+        </icon>
+        <icon id="file.exit">
+            <theme name="light" svg="icons/file/exit.svg"/>
+            <theme name="dark" svg="icons/file/exit.svg"/>
+        </icon>
+        <icon id="file.save">
+            <theme name="light" svg="icons/file/save.svg"/>
+            <theme name="dark" svg="icons/file/save.svg"/>
+        </icon>
+        <icon id="file.save_as">
+            <theme name="light" svg="icons/file/save_as.svg"/>
+            <theme name="dark" svg="icons/file/save_as.svg"/>
+        </icon>
+        <icon id="gc.check_update">
+            <theme name="light" svg="icons/gc/check_update.svg"/>
+            <theme name="dark" svg="icons/gc/check_update.svg"/>
+        </icon>
+        <icon id="gc.settings">
+            <theme name="light" svg="icons/gc/settings.svg"/>
+            <theme name="dark" svg="icons/gc/settings.svg"/>
+        </icon>
+        <icon id="gc.std_part_library">
+            <theme name="light" svg="icons/gc/std_part_library.svg"/>
+            <theme name="dark" svg="icons/gc/std_part_library.svg"/>
+        </icon>
+        <icon id="help.about">
+            <theme name="light" svg="icons/help/about.svg"/>
+            <theme name="dark" svg="icons/help/about.svg"/>
+        </icon>
+        <icon id="help.contents">
+            <theme name="light" svg="icons/help/contents.svg"/>
+            <theme name="dark" svg="icons/help/contents.svg"/>
+        </icon>
+        <icon id="measure.angle">
+            <theme name="light" svg="icons/measure/angle.svg"/>
+            <theme name="dark" svg="icons/measure/angle.svg"/>
+        </icon>
+        <icon id="measure.dialog">
+            <theme name="light" svg="icons/measure/dialog.svg"/>
+            <theme name="dark" svg="icons/measure/dialog.svg"/>
+        </icon>
+        <icon id="measure.distance">
+            <theme name="light" svg="icons/measure/distance.svg"/>
+            <theme name="dark" svg="icons/measure/distance.svg"/>
+        </icon>
+        <icon id="measure.draft">
+            <theme name="light" svg="icons/measure/draft.svg"/>
+            <theme name="dark" svg="icons/measure/draft.svg"/>
+        </icon>
+        <icon id="measure.mass_props">
+            <theme name="light" svg="icons/measure/mass_props.svg"/>
+            <theme name="dark" svg="icons/measure/mass_props.svg"/>
+        </icon>
+        <icon id="measure.radius">
+            <theme name="light" svg="icons/measure/radius.svg"/>
+            <theme name="dark" svg="icons/measure/radius.svg"/>
+        </icon>
+        <icon id="measure.section">
+            <theme name="light" svg="icons/measure/section.svg"/>
+            <theme name="dark" svg="icons/measure/section.svg"/>
+        </icon>
+        <icon id="model.auto_round">
+            <theme name="light" svg="icons/model/auto_round.svg"/>
+            <theme name="dark" svg="icons/model/auto_round.svg"/>
+        </icon>
+        <icon id="model.blend">
+            <theme name="light" svg="icons/model/blend.svg"/>
+            <theme name="dark" svg="icons/model/blend.svg"/>
+        </icon>
+        <icon id="model.chamfer">
+            <theme name="light" svg="icons/model/chamfer.svg"/>
+            <theme name="dark" svg="icons/model/chamfer.svg"/>
+        </icon>
+        <icon id="model.collapse">
+            <theme name="light" svg="icons/model/collapse.svg"/>
+            <theme name="dark" svg="icons/model/collapse.svg"/>
+        </icon>
+        <icon id="model.copy_from">
+            <theme name="light" svg="icons/model/copy_from.svg"/>
+            <theme name="dark" svg="icons/model/copy_from.svg"/>
+        </icon>
+        <icon id="model.copy_geometry">
+            <theme name="light" svg="icons/model/copy_geometry.svg"/>
+            <theme name="dark" svg="icons/model/copy_geometry.svg"/>
+        </icon>
+        <icon id="model.corner_chamfer">
+            <theme name="light" svg="icons/model/corner_chamfer.svg"/>
+            <theme name="dark" svg="icons/model/corner_chamfer.svg"/>
+        </icon>
+        <icon id="model.cosmetic_groove">
+            <theme name="light" svg="icons/model/cosmetic_groove.svg"/>
+            <theme name="dark" svg="icons/model/cosmetic_groove.svg"/>
+        </icon>
+        <icon id="model.cosmetic_sketch">
+            <theme name="light" svg="icons/model/cosmetic_sketch.svg"/>
+            <theme name="dark" svg="icons/model/cosmetic_sketch.svg"/>
+        </icon>
+        <icon id="model.cosmetic_thread">
+            <theme name="light" svg="icons/model/cosmetic_thread.svg"/>
+            <theme name="dark" svg="icons/model/cosmetic_thread.svg"/>
+        </icon>
+        <icon id="model.delete">
+            <theme name="light" svg="icons/model/delete.svg"/>
+            <theme name="dark" svg="icons/model/delete.svg"/>
+        </icon>
+        <icon id="model.designated_area">
+            <theme name="light" svg="icons/model/designated_area.svg"/>
+            <theme name="dark" svg="icons/model/designated_area.svg"/>
+        </icon>
+        <icon id="model.draft">
+            <theme name="light" svg="icons/model/draft.svg"/>
+            <theme name="dark" svg="icons/model/draft.svg"/>
+        </icon>
+        <icon id="model.ecad_area">
+            <theme name="light" svg="icons/model/ecad_area.svg"/>
+            <theme name="dark" svg="icons/model/ecad_area.svg"/>
+        </icon>
+        <icon id="model.edge_chamfer">
+            <theme name="light" svg="icons/model/edge_chamfer.svg"/>
+            <theme name="dark" svg="icons/model/edge_chamfer.svg"/>
+        </icon>
+        <icon id="model.extend">
+            <theme name="light" svg="icons/model/extend.svg"/>
+            <theme name="dark" svg="icons/model/extend.svg"/>
+        </icon>
+        <icon id="model.extrude">
+            <theme name="light" svg="icons/model/extrude.svg"/>
+            <theme name="dark" svg="icons/model/extrude.svg"/>
+        </icon>
+        <icon id="model.feature_delete">
+            <theme name="light" svg="icons/model/feature_delete.svg"/>
+            <theme name="dark" svg="icons/model/feature_delete.svg"/>
+        </icon>
+        <icon id="model.feature_suppress">
+            <theme name="light" svg="icons/model/feature_suppress.svg"/>
+            <theme name="dark" svg="icons/model/feature_suppress.svg"/>
+        </icon>
+        <icon id="model.feature_unsuppress">
+            <theme name="light" svg="icons/model/feature_unsuppress.svg"/>
+            <theme name="dark" svg="icons/model/feature_unsuppress.svg"/>
+        </icon>
+        <icon id="model.flip_normal">
+            <theme name="light" svg="icons/model/flip_normal.svg"/>
+            <theme name="dark" svg="icons/model/flip_normal.svg"/>
+        </icon>
+        <icon id="model.geometry_pattern">
+            <theme name="light" svg="icons/model/geometry_pattern.svg"/>
+            <theme name="dark" svg="icons/model/geometry_pattern.svg"/>
+        </icon>
+        <icon id="model.helical_sweep">
+            <theme name="light" svg="icons/model/helical_sweep.svg"/>
+            <theme name="dark" svg="icons/model/helical_sweep.svg"/>
+        </icon>
+        <icon id="model.hole">
+            <theme name="light" svg="icons/model/hole.svg"/>
+            <theme name="dark" svg="icons/model/hole.svg"/>
+        </icon>
+        <icon id="model.import">
+            <theme name="light" svg="icons/model/import.svg"/>
+            <theme name="dark" svg="icons/model/import.svg"/>
+        </icon>
+        <icon id="model.independent_geometry">
+            <theme name="light" svg="icons/model/independent_geometry.svg"/>
+            <theme name="dark" svg="icons/model/independent_geometry.svg"/>
+        </icon>
+        <icon id="model.intersect">
+            <theme name="light" svg="icons/model/intersect.svg"/>
+            <theme name="dark" svg="icons/model/intersect.svg"/>
+        </icon>
+        <icon id="model.lattice">
+            <theme name="light" svg="icons/model/lattice.svg"/>
+            <theme name="dark" svg="icons/model/lattice.svg"/>
+        </icon>
+        <icon id="model.layout_feature">
+            <theme name="light" svg="icons/model/layout_feature.svg"/>
+            <theme name="dark" svg="icons/model/layout_feature.svg"/>
+        </icon>
+        <icon id="model.merge">
+            <theme name="light" svg="icons/model/merge.svg"/>
+            <theme name="dark" svg="icons/model/merge.svg"/>
+        </icon>
+        <icon id="model.merge_inheritance">
+            <theme name="light" svg="icons/model/merge_inheritance.svg"/>
+            <theme name="dark" svg="icons/model/merge_inheritance.svg"/>
+        </icon>
+        <icon id="model.mirror">
+            <theme name="light" svg="icons/model/mirror.svg"/>
+            <theme name="dark" svg="icons/model/mirror.svg"/>
+        </icon>
+        <icon id="model.offset">
+            <theme name="light" svg="icons/model/offset.svg"/>
+            <theme name="dark" svg="icons/model/offset.svg"/>
+        </icon>
+        <icon id="model.pattern">
+            <theme name="light" svg="icons/model/pattern.svg"/>
+            <theme name="dark" svg="icons/model/pattern.svg"/>
+        </icon>
+        <icon id="model.pattern_table">
+            <theme name="light" svg="icons/model/pattern_table.svg"/>
+            <theme name="dark" svg="icons/model/pattern_table.svg"/>
+        </icon>
+        <icon id="model.profile_rib">
+            <theme name="light" svg="icons/model/profile_rib.svg"/>
+            <theme name="dark" svg="icons/model/profile_rib.svg"/>
+        </icon>
+        <icon id="model.project">
+            <theme name="light" svg="icons/model/project.svg"/>
+            <theme name="dark" svg="icons/model/project.svg"/>
+        </icon>
+        <icon id="model.project_remove">
+            <theme name="light" svg="icons/model/project_remove.svg"/>
+            <theme name="dark" svg="icons/model/project_remove.svg"/>
+        </icon>
+        <icon id="model.regenerate">
+            <theme name="light" svg="icons/model/regenerate.svg"/>
+            <theme name="dark" svg="icons/model/regenerate.svg"/>
+        </icon>
+        <icon id="model.revolve">
+            <theme name="light" svg="icons/model/revolve.svg"/>
+            <theme name="dark" svg="icons/model/revolve.svg"/>
+        </icon>
+        <icon id="model.rib">
+            <theme name="light" svg="icons/model/rib.svg"/>
+            <theme name="dark" svg="icons/model/rib.svg"/>
+        </icon>
+        <icon id="model.rotational_blend">
+            <theme name="light" svg="icons/model/rotational_blend.svg"/>
+            <theme name="dark" svg="icons/model/rotational_blend.svg"/>
+        </icon>
+        <icon id="model.round">
+            <theme name="light" svg="icons/model/round.svg"/>
+            <theme name="dark" svg="icons/model/round.svg"/>
+        </icon>
+        <icon id="model.shell">
+            <theme name="light" svg="icons/model/shell.svg"/>
+            <theme name="dark" svg="icons/model/shell.svg"/>
+        </icon>
+        <icon id="model.shrinkwrap">
+            <theme name="light" svg="icons/model/shrinkwrap.svg"/>
+            <theme name="dark" svg="icons/model/shrinkwrap.svg"/>
+        </icon>
+        <icon id="model.solidify">
+            <theme name="light" svg="icons/model/solidify.svg"/>
+            <theme name="dark" svg="icons/model/solidify.svg"/>
+        </icon>
+        <icon id="model.spiral_bend">
+            <theme name="light" svg="icons/model/spiral_bend.svg"/>
+            <theme name="dark" svg="icons/model/spiral_bend.svg"/>
+        </icon>
+        <icon id="model.split_surface">
+            <theme name="light" svg="icons/model/split_surface.svg"/>
+            <theme name="dark" svg="icons/model/split_surface.svg"/>
+        </icon>
+        <icon id="model.sweep">
+            <theme name="light" svg="icons/model/sweep.svg"/>
+            <theme name="dark" svg="icons/model/sweep.svg"/>
+        </icon>
+        <icon id="model.sweep_blend">
+            <theme name="light" svg="icons/model/sweep_blend.svg"/>
+            <theme name="dark" svg="icons/model/sweep_blend.svg"/>
+        </icon>
+        <icon id="model.thicken">
+            <theme name="light" svg="icons/model/thicken.svg"/>
+            <theme name="dark" svg="icons/model/thicken.svg"/>
+        </icon>
+        <icon id="model.toroidal_bend">
+            <theme name="light" svg="icons/model/toroidal_bend.svg"/>
+            <theme name="dark" svg="icons/model/toroidal_bend.svg"/>
+        </icon>
+        <icon id="model.trajectory_rib">
+            <theme name="light" svg="icons/model/trajectory_rib.svg"/>
+            <theme name="dark" svg="icons/model/trajectory_rib.svg"/>
+        </icon>
+        <icon id="model.trim">
+            <theme name="light" svg="icons/model/trim.svg"/>
+            <theme name="dark" svg="icons/model/trim.svg"/>
+        </icon>
+        <icon id="model.user_defined_feature">
+            <theme name="light" svg="icons/model/user_defined_feature.svg"/>
+            <theme name="dark" svg="icons/model/user_defined_feature.svg"/>
+        </icon>
+        <icon id="model.variable_pull_draft">
+            <theme name="light" svg="icons/model/variable_pull_draft.svg"/>
+            <theme name="dark" svg="icons/model/variable_pull_draft.svg"/>
+        </icon>
+        <icon id="model.volume_helical_sweep">
+            <theme name="light" svg="icons/model/volume_helical_sweep.svg"/>
+            <theme name="dark" svg="icons/model/volume_helical_sweep.svg"/>
+        </icon>
+        <icon id="model.wrap">
+            <theme name="light" svg="icons/model/wrap.svg"/>
+            <theme name="dark" svg="icons/model/wrap.svg"/>
+        </icon>
+        <icon id="model_intent.component_interface">
+            <theme name="light" svg="icons/model_intent/component_interface.svg"/>
+            <theme name="dark" svg="icons/model_intent/component_interface.svg"/>
+        </icon>
+        <icon id="model_intent.family_table">
+            <theme name="light" svg="icons/model_intent/family_table.svg"/>
+            <theme name="dark" svg="icons/model_intent/family_table.svg"/>
+        </icon>
+        <icon id="model_intent.parameters">
+            <theme name="light" svg="icons/model_intent/parameters.svg"/>
+            <theme name="dark" svg="icons/model_intent/parameters.svg"/>
+        </icon>
+        <icon id="model_intent.publish_geometry">
+            <theme name="light" svg="icons/model_intent/publish_geometry.svg"/>
+            <theme name="dark" svg="icons/model_intent/publish_geometry.svg"/>
+        </icon>
+        <icon id="model_intent.switch_dimensions">
+            <theme name="light" svg="icons/model_intent/switch_dimensions.svg"/>
+            <theme name="dark" svg="icons/model_intent/switch_dimensions.svg"/>
+        </icon>
+        <icon id="select.filter">
+            <theme name="light" svg="icons/select/filter.svg"/>
+            <theme name="dark" svg="icons/select/filter.svg"/>
+        </icon>
+        <icon id="select.lasso">
+            <theme name="light" svg="icons/select/lasso.svg"/>
+            <theme name="dark" svg="icons/select/lasso.svg"/>
+        </icon>
+        <icon id="select.rectangle">
+            <theme name="light" svg="icons/select/rectangle.svg"/>
+            <theme name="dark" svg="icons/select/rectangle.svg"/>
+        </icon>
+        <icon id="select.select">
+            <theme name="light" svg="icons/select/select.svg"/>
+            <theme name="dark" svg="icons/select/select.svg"/>
+        </icon>
+        <icon id="select.single">
+            <theme name="light" svg="icons/select/single.svg"/>
+            <theme name="dark" svg="icons/select/single.svg"/>
+        </icon>
+        <icon id="sheet.base_flange">
+            <theme name="light" svg="icons/sheet/base_flange.svg"/>
+            <theme name="dark" svg="icons/sheet/base_flange.svg"/>
+        </icon>
+        <icon id="sheet.bend">
+            <theme name="light" svg="icons/sheet/bend.svg"/>
+            <theme name="dark" svg="icons/sheet/bend.svg"/>
+        </icon>
+        <icon id="sheet.break_corner">
+            <theme name="light" svg="icons/sheet/break_corner.svg"/>
+            <theme name="dark" svg="icons/sheet/break_corner.svg"/>
+        </icon>
+        <icon id="sheet.contour_flange">
+            <theme name="light" svg="icons/sheet/contour_flange.svg"/>
+            <theme name="dark" svg="icons/sheet/contour_flange.svg"/>
+        </icon>
+        <icon id="sheet.corner_relief">
+            <theme name="light" svg="icons/sheet/corner_relief.svg"/>
+            <theme name="dark" svg="icons/sheet/corner_relief.svg"/>
+        </icon>
+        <icon id="sheet.cutout">
+            <theme name="light" svg="icons/sheet/cutout.svg"/>
+            <theme name="dark" svg="icons/sheet/cutout.svg"/>
+        </icon>
+        <icon id="sheet.edge_flange">
+            <theme name="light" svg="icons/sheet/edge_flange.svg"/>
+            <theme name="dark" svg="icons/sheet/edge_flange.svg"/>
+        </icon>
+        <icon id="sheet.export_flat">
+            <theme name="light" svg="icons/sheet/export_flat.svg"/>
+            <theme name="dark" svg="icons/sheet/export_flat.svg"/>
+        </icon>
+        <icon id="sheet.flatten">
+            <theme name="light" svg="icons/sheet/flatten.svg"/>
+            <theme name="dark" svg="icons/sheet/flatten.svg"/>
+        </icon>
+        <icon id="sheet.hole">
+            <theme name="light" svg="icons/sheet/hole.svg"/>
+            <theme name="dark" svg="icons/sheet/hole.svg"/>
+        </icon>
+        <icon id="sheet.jog">
+            <theme name="light" svg="icons/sheet/jog.svg"/>
+            <theme name="dark" svg="icons/sheet/jog.svg"/>
+        </icon>
+        <icon id="sheet.lofted_flange">
+            <theme name="light" svg="icons/sheet/lofted_flange.svg"/>
+            <theme name="dark" svg="icons/sheet/lofted_flange.svg"/>
+        </icon>
+        <icon id="sheet.rebend">
+            <theme name="light" svg="icons/sheet/rebend.svg"/>
+            <theme name="dark" svg="icons/sheet/rebend.svg"/>
+        </icon>
+        <icon id="sheet.tab">
+            <theme name="light" svg="icons/sheet/tab.svg"/>
+            <theme name="dark" svg="icons/sheet/tab.svg"/>
+        </icon>
+        <icon id="sheet.unbend">
+            <theme name="light" svg="icons/sheet/unbend.svg"/>
+            <theme name="dark" svg="icons/sheet/unbend.svg"/>
+        </icon>
+        <icon id="sketch.chamfer">
+            <theme name="light" svg="icons/sketch/chamfer.svg"/>
+            <theme name="dark" svg="icons/sketch/chamfer.svg"/>
+        </icon>
+        <icon id="sketch.chamfer_trim">
+            <theme name="light" svg="icons/sketch/chamfer_trim.svg"/>
+            <theme name="dark" svg="icons/sketch/chamfer_trim.svg"/>
+        </icon>
+        <icon id="sketch.constr_coincident">
+            <theme name="light" svg="icons/sketch/constr_coincident.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_coincident.svg"/>
+        </icon>
+        <icon id="sketch.constr_equal">
+            <theme name="light" svg="icons/sketch/constr_equal.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_equal.svg"/>
+        </icon>
+        <icon id="sketch.constr_fix">
+            <theme name="light" svg="icons/sketch/constr_fix.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_fix.svg"/>
+        </icon>
+        <icon id="sketch.constr_horizontal">
+            <theme name="light" svg="icons/sketch/constr_horizontal.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_horizontal.svg"/>
+        </icon>
+        <icon id="sketch.constr_midpoint">
+            <theme name="light" svg="icons/sketch/constr_midpoint.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_midpoint.svg"/>
+        </icon>
+        <icon id="sketch.constr_parallel">
+            <theme name="light" svg="icons/sketch/constr_parallel.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_parallel.svg"/>
+        </icon>
+        <icon id="sketch.constr_perp">
+            <theme name="light" svg="icons/sketch/constr_perp.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_perp.svg"/>
+        </icon>
+        <icon id="sketch.constr_symmetric">
+            <theme name="light" svg="icons/sketch/constr_symmetric.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_symmetric.svg"/>
+        </icon>
+        <icon id="sketch.constr_tangent">
+            <theme name="light" svg="icons/sketch/constr_tangent.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_tangent.svg"/>
+        </icon>
+        <icon id="sketch.constr_vertical">
+            <theme name="light" svg="icons/sketch/constr_vertical.svg"/>
+            <theme name="dark" svg="icons/sketch/constr_vertical.svg"/>
+        </icon>
+        <icon id="sketch.construction">
+            <theme name="light" svg="icons/sketch/construction.svg"/>
+            <theme name="dark" svg="icons/sketch/construction.svg"/>
+        </icon>
+        <icon id="sketch.convert_to">
+            <theme name="light" svg="icons/sketch/convert_to.svg"/>
+            <theme name="dark" svg="icons/sketch/convert_to.svg"/>
+        </icon>
+        <icon id="sketch.corner">
+            <theme name="light" svg="icons/sketch/corner.svg"/>
+            <theme name="dark" svg="icons/sketch/corner.svg"/>
+        </icon>
+        <icon id="sketch.delete">
+            <theme name="light" svg="icons/sketch/delete.svg"/>
+            <theme name="dark" svg="icons/sketch/delete.svg"/>
+        </icon>
+        <icon id="sketch.delete_segment">
+            <theme name="light" svg="icons/sketch/delete_segment.svg"/>
+            <theme name="dark" svg="icons/sketch/delete_segment.svg"/>
+        </icon>
+        <icon id="sketch.dim_angle">
+            <theme name="light" svg="icons/sketch/dim_angle.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_angle.svg"/>
+        </icon>
+        <icon id="sketch.dim_baseline">
+            <theme name="light" svg="icons/sketch/dim_baseline.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_baseline.svg"/>
+        </icon>
+        <icon id="sketch.dim_diameter">
+            <theme name="light" svg="icons/sketch/dim_diameter.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_diameter.svg"/>
+        </icon>
+        <icon id="sketch.dim_horizontal">
+            <theme name="light" svg="icons/sketch/dim_horizontal.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_horizontal.svg"/>
+        </icon>
+        <icon id="sketch.dim_perimeter">
+            <theme name="light" svg="icons/sketch/dim_perimeter.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_perimeter.svg"/>
+        </icon>
+        <icon id="sketch.dim_radius">
+            <theme name="light" svg="icons/sketch/dim_radius.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_radius.svg"/>
+        </icon>
+        <icon id="sketch.dim_reference">
+            <theme name="light" svg="icons/sketch/dim_reference.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_reference.svg"/>
+        </icon>
+        <icon id="sketch.dim_smart">
+            <theme name="light" svg="icons/sketch/dim_smart.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_smart.svg"/>
+        </icon>
+        <icon id="sketch.dim_vertical">
+            <theme name="light" svg="icons/sketch/dim_vertical.svg"/>
+            <theme name="dark" svg="icons/sketch/dim_vertical.svg"/>
+        </icon>
+        <icon id="sketch.display_constraints">
+            <theme name="light" svg="icons/sketch/display_constraints.svg"/>
+            <theme name="dark" svg="icons/sketch/display_constraints.svg"/>
+        </icon>
+        <icon id="sketch.display_dimensions">
+            <theme name="light" svg="icons/sketch/display_dimensions.svg"/>
+            <theme name="dark" svg="icons/sketch/display_dimensions.svg"/>
+        </icon>
+        <icon id="sketch.display_grid">
+            <theme name="light" svg="icons/sketch/display_grid.svg"/>
+            <theme name="dark" svg="icons/sketch/display_grid.svg"/>
+        </icon>
+        <icon id="sketch.display_vertices">
+            <theme name="light" svg="icons/sketch/display_vertices.svg"/>
+            <theme name="dark" svg="icons/sketch/display_vertices.svg"/>
+        </icon>
+        <icon id="sketch.divide">
+            <theme name="light" svg="icons/sketch/divide.svg"/>
+            <theme name="dark" svg="icons/sketch/divide.svg"/>
+        </icon>
+        <icon id="sketch.edit_sketch">
+            <theme name="light" svg="icons/sketch/edit_sketch.svg"/>
+            <theme name="dark" svg="icons/sketch/edit_sketch.svg"/>
+        </icon>
+        <icon id="sketch.extend">
+            <theme name="light" svg="icons/sketch/extend.svg"/>
+            <theme name="dark" svg="icons/sketch/extend.svg"/>
+        </icon>
+        <icon id="sketch.feature_requirements">
+            <theme name="light" svg="icons/sketch/feature_requirements.svg"/>
+            <theme name="dark" svg="icons/sketch/feature_requirements.svg"/>
+        </icon>
+        <icon id="sketch.fillet">
+            <theme name="light" svg="icons/sketch/fillet.svg"/>
+            <theme name="dark" svg="icons/sketch/fillet.svg"/>
+        </icon>
+        <icon id="sketch.fillet_circular">
+            <theme name="light" svg="icons/sketch/fillet_circular.svg"/>
+            <theme name="dark" svg="icons/sketch/fillet_circular.svg"/>
+        </icon>
+        <icon id="sketch.fillet_circular_trim">
+            <theme name="light" svg="icons/sketch/fillet_circular_trim.svg"/>
+            <theme name="dark" svg="icons/sketch/fillet_circular_trim.svg"/>
+        </icon>
+        <icon id="sketch.fillet_elliptical">
+            <theme name="light" svg="icons/sketch/fillet_elliptical.svg"/>
+            <theme name="dark" svg="icons/sketch/fillet_elliptical.svg"/>
+        </icon>
+        <icon id="sketch.fillet_elliptical_trim">
+            <theme name="light" svg="icons/sketch/fillet_elliptical_trim.svg"/>
+            <theme name="dark" svg="icons/sketch/fillet_elliptical_trim.svg"/>
+        </icon>
+        <icon id="sketch.flip_plane">
+            <theme name="light" svg="icons/sketch/flip_plane.svg"/>
+            <theme name="dark" svg="icons/sketch/flip_plane.svg"/>
+        </icon>
+        <icon id="sketch.grid_settings">
+            <theme name="light" svg="icons/sketch/grid_settings.svg"/>
+            <theme name="dark" svg="icons/sketch/grid_settings.svg"/>
+        </icon>
+        <icon id="sketch.inspect_entity">
+            <theme name="light" svg="icons/sketch/inspect_entity.svg"/>
+            <theme name="dark" svg="icons/sketch/inspect_entity.svg"/>
+        </icon>
+        <icon id="sketch.inspect_intersection">
+            <theme name="light" svg="icons/sketch/inspect_intersection.svg"/>
+            <theme name="dark" svg="icons/sketch/inspect_intersection.svg"/>
+        </icon>
+        <icon id="sketch.inspect_tangency">
+            <theme name="light" svg="icons/sketch/inspect_tangency.svg"/>
+            <theme name="dark" svg="icons/sketch/inspect_tangency.svg"/>
+        </icon>
+        <icon id="sketch.line_style_clear">
+            <theme name="light" svg="icons/sketch/line_style_clear.svg"/>
+            <theme name="dark" svg="icons/sketch/line_style_clear.svg"/>
+        </icon>
+        <icon id="sketch.line_style_set">
+            <theme name="light" svg="icons/sketch/line_style_set.svg"/>
+            <theme name="dark" svg="icons/sketch/line_style_set.svg"/>
+        </icon>
+        <icon id="sketch.mirror">
+            <theme name="light" svg="icons/sketch/mirror.svg"/>
+            <theme name="dark" svg="icons/sketch/mirror.svg"/>
+        </icon>
+        <icon id="sketch.modify">
+            <theme name="light" svg="icons/sketch/modify.svg"/>
+            <theme name="dark" svg="icons/sketch/modify.svg"/>
+        </icon>
+        <icon id="sketch.new_sketch">
+            <theme name="light" svg="icons/sketch/new_sketch.svg"/>
+            <theme name="dark" svg="icons/sketch/new_sketch.svg"/>
+        </icon>
+        <icon id="sketch.offset">
+            <theme name="light" svg="icons/sketch/offset.svg"/>
+            <theme name="dark" svg="icons/sketch/offset.svg"/>
+        </icon>
+        <icon id="sketch.pattern">
+            <theme name="light" svg="icons/sketch/pattern.svg"/>
+            <theme name="dark" svg="icons/sketch/pattern.svg"/>
+        </icon>
+        <icon id="sketch.project">
+            <theme name="light" svg="icons/sketch/project.svg"/>
+            <theme name="dark" svg="icons/sketch/project.svg"/>
+        </icon>
+        <icon id="sketch.properties">
+            <theme name="light" svg="icons/sketch/properties.svg"/>
+            <theme name="dark" svg="icons/sketch/properties.svg"/>
+        </icon>
+        <icon id="sketch.references">
+            <theme name="light" svg="icons/sketch/references.svg"/>
+            <theme name="dark" svg="icons/sketch/references.svg"/>
+        </icon>
+        <icon id="sketch.replace">
+            <theme name="light" svg="icons/sketch/replace.svg"/>
+            <theme name="dark" svg="icons/sketch/replace.svg"/>
+        </icon>
+        <icon id="sketch.reuse">
+            <theme name="light" svg="icons/sketch/reuse.svg"/>
+            <theme name="dark" svg="icons/sketch/reuse.svg"/>
+        </icon>
+        <icon id="sketch.rotate_resize">
+            <theme name="light" svg="icons/sketch/rotate_resize.svg"/>
+            <theme name="dark" svg="icons/sketch/rotate_resize.svg"/>
+        </icon>
+        <icon id="sketch.section_flip">
+            <theme name="light" svg="icons/sketch/section_flip.svg"/>
+            <theme name="dark" svg="icons/sketch/section_flip.svg"/>
+        </icon>
+        <icon id="sketch.section_restore">
+            <theme name="light" svg="icons/sketch/section_restore.svg"/>
+            <theme name="dark" svg="icons/sketch/section_restore.svg"/>
+        </icon>
+        <icon id="sketch.section_set_horizontal">
+            <theme name="light" svg="icons/sketch/section_set_horizontal.svg"/>
+            <theme name="dark" svg="icons/sketch/section_set_horizontal.svg"/>
+        </icon>
+        <icon id="sketch.section_set_vertical">
+            <theme name="light" svg="icons/sketch/section_set_vertical.svg"/>
+            <theme name="dark" svg="icons/sketch/section_set_vertical.svg"/>
+        </icon>
+        <icon id="sketch.setup">
+            <theme name="light" svg="icons/sketch/setup.svg"/>
+            <theme name="dark" svg="icons/sketch/setup.svg"/>
+        </icon>
+        <icon id="sketch.text">
+            <theme name="light" svg="icons/sketch/text.svg"/>
+            <theme name="dark" svg="icons/sketch/text.svg"/>
+        </icon>
+        <icon id="sketch.thicken">
+            <theme name="light" svg="icons/sketch/thicken.svg"/>
+            <theme name="dark" svg="icons/sketch/thicken.svg"/>
+        </icon>
+        <icon id="sketch.toggle_lock">
+            <theme name="light" svg="icons/sketch/toggle_lock.svg"/>
+            <theme name="dark" svg="icons/sketch/toggle_lock.svg"/>
+        </icon>
+        <icon id="sketch.trim">
+            <theme name="light" svg="icons/sketch/trim.svg"/>
+            <theme name="dark" svg="icons/sketch/trim.svg"/>
+        </icon>
+        <icon id="sketch.underconstrained">
+            <theme name="light" svg="icons/sketch/underconstrained.svg"/>
+            <theme name="dark" svg="icons/sketch/underconstrained.svg"/>
+        </icon>
+        <icon id="sketch.view">
+            <theme name="light" svg="icons/sketch/view.svg"/>
+            <theme name="dark" svg="icons/sketch/view.svg"/>
+        </icon>
+        <icon id="surface.blend_tangent">
+            <theme name="light" svg="icons/surface/blend_tangent.svg"/>
+            <theme name="dark" svg="icons/surface/blend_tangent.svg"/>
+        </icon>
+        <icon id="surface.boundary_blend">
+            <theme name="light" svg="icons/surface/boundary_blend.svg"/>
+            <theme name="dark" svg="icons/surface/boundary_blend.svg"/>
+        </icon>
+        <icon id="surface.fill">
+            <theme name="light" svg="icons/surface/fill.svg"/>
+            <theme name="dark" svg="icons/surface/fill.svg"/>
+        </icon>
+        <icon id="surface.flatten_quilt">
+            <theme name="light" svg="icons/surface/flatten_quilt.svg"/>
+            <theme name="dark" svg="icons/surface/flatten_quilt.svg"/>
+        </icon>
+        <icon id="surface.flatten_quilt_deformation">
+            <theme name="light" svg="icons/surface/flatten_quilt_deformation.svg"/>
+            <theme name="dark" svg="icons/surface/flatten_quilt_deformation.svg"/>
+        </icon>
+        <icon id="surface.foreign_surface">
+            <theme name="light" svg="icons/surface/foreign_surface.svg"/>
+            <theme name="dark" svg="icons/surface/foreign_surface.svg"/>
+        </icon>
+        <icon id="surface.freestyle">
+            <theme name="light" svg="icons/surface/freestyle.svg"/>
+            <theme name="dark" svg="icons/surface/freestyle.svg"/>
+        </icon>
+        <icon id="surface.restyle">
+            <theme name="light" svg="icons/surface/restyle.svg"/>
+            <theme name="dark" svg="icons/surface/restyle.svg"/>
+        </icon>
+        <icon id="surface.style">
+            <theme name="light" svg="icons/surface/style.svg"/>
+            <theme name="dark" svg="icons/surface/style.svg"/>
+        </icon>
+        <icon id="surface.vertex_round">
+            <theme name="light" svg="icons/surface/vertex_round.svg"/>
+            <theme name="dark" svg="icons/surface/vertex_round.svg"/>
+        </icon>
+        <icon id="synchronous.delete_face">
+            <theme name="light" svg="icons/synchronous/delete_face.svg"/>
+            <theme name="dark" svg="icons/synchronous/delete_face.svg"/>
+        </icon>
+        <icon id="synchronous.move_face">
+            <theme name="light" svg="icons/synchronous/move_face.svg"/>
+            <theme name="dark" svg="icons/synchronous/move_face.svg"/>
+        </icon>
+        <icon id="synchronous.offset_region">
+            <theme name="light" svg="icons/synchronous/offset_region.svg"/>
+            <theme name="dark" svg="icons/synchronous/offset_region.svg"/>
+        </icon>
+        <icon id="synchronous.pull">
+            <theme name="light" svg="icons/synchronous/pull.svg"/>
+            <theme name="dark" svg="icons/synchronous/pull.svg"/>
+        </icon>
+        <icon id="tools.command_line">
+            <theme name="light" svg="icons/tools/command_line.svg"/>
+            <theme name="dark" svg="icons/tools/command_line.svg"/>
+        </icon>
+        <icon id="tools.expressions">
+            <theme name="light" svg="icons/tools/expressions.svg"/>
+            <theme name="dark" svg="icons/tools/expressions.svg"/>
+        </icon>
+        <icon id="tools.journal_pause">
+            <theme name="light" svg="icons/tools/journal_pause.svg"/>
+            <theme name="dark" svg="icons/tools/journal_pause.svg"/>
+        </icon>
+        <icon id="tools.journal_play">
+            <theme name="light" svg="icons/tools/journal_play.svg"/>
+            <theme name="dark" svg="icons/tools/journal_play.svg"/>
+        </icon>
+        <icon id="tools.journal_record">
+            <theme name="light" svg="icons/tools/journal_record.svg"/>
+            <theme name="dark" svg="icons/tools/journal_record.svg"/>
+        </icon>
+        <icon id="tools.python_console">
+            <theme name="light" svg="icons/tools/python_console.svg"/>
+            <theme name="dark" svg="icons/tools/python_console.svg"/>
+        </icon>
+        <icon id="ui.cancel">
+            <theme name="light" svg="icons/ui/cancel.svg"/>
+            <theme name="dark" svg="icons/ui/cancel.svg"/>
+        </icon>
+        <icon id="ui.file_system">
+            <theme name="light" svg="icons/ui/file_system.svg"/>
+            <theme name="dark" svg="icons/ui/file_system.svg"/>
+        </icon>
+        <icon id="ui.ok">
+            <theme name="light" svg="icons/ui/ok.svg"/>
+            <theme name="dark" svg="icons/ui/ok.svg"/>
+        </icon>
+        <icon id="ui.restore_layout">
+            <theme name="light" svg="icons/ui/restore_layout.svg"/>
+            <theme name="dark" svg="icons/ui/restore_layout.svg"/>
+        </icon>
+        <icon id="ui.save_layout">
+            <theme name="light" svg="icons/ui/save_layout.svg"/>
+            <theme name="dark" svg="icons/ui/save_layout.svg"/>
+        </icon>
+        <icon id="ui.toggle_mode">
+            <theme name="light" svg="icons/ui/toggle_mode.svg"/>
+            <theme name="dark" svg="icons/ui/toggle_mode.svg"/>
+        </icon>
+        <icon id="view.clipping_plane">
+            <theme name="light" svg="icons/view/clipping_plane.svg"/>
+            <theme name="dark" svg="icons/view/clipping_plane.svg"/>
+        </icon>
+        <icon id="view.dynamic_section">
+            <theme name="light" svg="icons/view/dynamic_section.svg"/>
+            <theme name="dark" svg="icons/view/dynamic_section.svg"/>
+        </icon>
+        <icon id="view.front">
+            <theme name="light" svg="icons/view/front.svg"/>
+            <theme name="dark" svg="icons/view/front.svg"/>
+        </icon>
+        <icon id="view.right">
+            <theme name="light" svg="icons/view/right.svg"/>
+            <theme name="dark" svg="icons/view/right.svg"/>
+        </icon>
+        <icon id="view.top">
+            <theme name="light" svg="icons/view/top.svg"/>
+            <theme name="dark" svg="icons/view/top.svg"/>
+        </icon>
+        <icon id="view.trimetric">
+            <theme name="light" svg="icons/view/trimetric.svg"/>
+            <theme name="dark" svg="icons/view/trimetric.svg"/>
+        </icon>
+        <icon id="window.arrange">
+            <theme name="light" svg="icons/window/arrange.svg"/>
+            <theme name="dark" svg="icons/window/arrange.svg"/>
+        </icon>
+        <icon id="window.new_window">
+            <theme name="light" svg="icons/window/new_window.svg"/>
+            <theme name="dark" svg="icons/window/new_window.svg"/>
+        </icon>
+        <icon id="window.tile_horizontal">
+            <theme name="light" svg="icons/window/tile_horizontal.svg"/>
+            <theme name="dark" svg="icons/window/tile_horizontal.svg"/>
+        </icon>
+    </icon-library>
+</IconLibraryConfig>

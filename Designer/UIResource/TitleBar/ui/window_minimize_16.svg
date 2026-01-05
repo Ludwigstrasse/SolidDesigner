@@ -1,8 +1,0 @@
-<!-- icons/ui/window_minimize_16.svg -->
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="16" height="16" viewBox="0 0 16 16">
-  <line x1="4" y1="9.5" x2="12" y2="9.5"
-        stroke="#F9FAFB"
-        stroke-width="1.4"
-        stroke-linecap="round"/>
-</svg>

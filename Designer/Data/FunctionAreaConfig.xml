@@ -6,30 +6,65 @@
     <!-- ========================================================= -->
     <ribbons>
         <ribbon id="sd.part"
-                label="NX - Part Modeling"
-                workbench="Part"
+                label="SD - Part Modeling"
+                workbench="workbench.part"
                 defaultTab="tab_part_home"/>
 
         <ribbon id="sd.sketch"
-                label="NX - Sketch"
-                workbench="Sketch"
+                label="SD - Sketch"
+                workbench="workbench.sketch"
                 defaultTab="tab_sketch_home"/>
 
         <ribbon id="sd.asm"
-                label="NX - Assembly"
-                workbench="Assembly"
+                label="SD - Assembly"
+                workbench="workbench.sssembly"
                 defaultTab="tab_asm_home"/>
 
-        <ribbon id="sd.sheetMetal"
-                label="NX - Sheet Metal"
-                workbench="SheetMetal"
-                defaultTab="tab_sheet_home"/>
+        <ribbon id="sd.home"
+                label="SD - Home"
+                workbench="workbench.home"
+                defaultTab="tab_home"/>
+                
+        <ribbon id="sd.sheetmetal"
+                label="SD - SheetMetal"
+                workbench="workbench.part"
+                defaultTab="tab_sheetmetal_home"/>
     </ribbons>
 
     <!-- ========================================================= -->
     <!-- 3. Ribbon layouts per environment                         -->
     <!-- ========================================================= -->
     <ribbon-layouts>
+
+        <!-- ===================== Default Home ===================== -->
+        <layout ribbon="sd.home">
+
+            <!-- Tab: Default Home -->
+            <tab id="tab_home" label="Home" order="10">
+                <!-- Data -->
+                <group id="grp_home_data" label="Data" order="10">
+                    <control type="large-button" commandRef="file.new"    row="0" column="0" />
+                    <control type="large-button" commandRef="file.open"   row="0" column="1" />
+                    <control type="large-button" commandRef="data.openLastSession" row="0" column="2"/>
+                    <control type="large-button" commandRef="data.selectWorkingDirectory" row="0" column="3"/>
+                    <control type="large-button" commandRef="data.eraseNotDisplayed" row="0" column="4"/>
+                </group>
+
+                <!-- Settings -->
+                <group id="grp_home_setting" label="Settings" order="20">
+                    <control type="large-button" commandRef="settings.modelDisplay"      row="0" column="0"/>
+                    <control type="large-button" commandRef="settings.systemAppearance"  row="0" column="1"/>
+                </group>
+                
+                <!-- Utilities -->
+                <group id="grp_home_utilities" label="Utilities" order="30">
+                    <control type="large-button" commandRef="utilities.playTrailFile"   row="0" column="0"/>
+                    <control type="large-button" commandRef="utilities.auxApplication"  row="0" column="1"/>
+                </group>
+            </tab>
+        </layout>
+
+
 
         <!-- ===================== Part environment ===================== -->
         <layout ribbon="sd.part">
@@ -653,55 +688,67 @@
     <classic-menus>
 
         <!-- ===================== Menu bars per workbench ===================== -->
-
-        <!-- Part modeling classic menu bar -->
-        <menuBar id="nx.part.menuBar" workbench="Part" label="NX Part - Classic" order="10">
-            <menu id="menu_file"   label="File"   order="10"/>
-            <menu id="menu_edit"   label="Edit"   order="20"/>
-            <menu id="menu_view"   label="View"   order="30"/>
-            <menu id="menu_insert" label="Insert" order="40"/>
-            <menu id="menu_tools"  label="Tools"  order="50"/>
-            <menu id="menu_window" label="Window" order="60"/>
-            <menu id="menu_help"   label="Help"   order="70"/>
-        </menuBar>
-
-        <!-- Sketch environment classic menu bar -->
-        <menuBar id="nx.sketch.menuBar" workbench="Sketch" label="NX Sketch - Classic" order="20">
-            <menu id="menu_file"       label="File"        order="10"/>
-            <menu id="menu_edit"       label="Edit"        order="20"/>
-            <menu id="menu_sketch"     label="Sketch"      order="30"/>
-            <menu id="menu_dimension"  label="Dimensions"  order="40"/>
-            <menu id="menu_constraint" label="Constraints" order="50"/>
-            <menu id="menu_view"       label="View"        order="60"/>
-            <menu id="menu_tools"      label="Tools"       order="70"/>
-            <menu id="menu_window"     label="Window"      order="80"/>
-            <menu id="menu_help"       label="Help"        order="90"/>
-        </menuBar>
-
-        <!-- Assembly environment classic menu bar -->
-        <menuBar id="nx.asm.menuBar" workbench="Assembly" label="NX Assembly - Classic" order="30">
-            <menu id="menu_file"     label="File"     order="10"/>
-            <menu id="menu_edit"     label="Edit"     order="20"/>
-            <menu id="menu_assembly" label="Assembly" order="30"/>
-            <menu id="menu_insert"   label="Insert"   order="40"/>
-            <menu id="menu_view"     label="View"     order="50"/>
-            <menu id="menu_tools"    label="Tools"    order="60"/>
-            <menu id="menu_window"   label="Window"   order="70"/>
-            <menu id="menu_help"     label="Help"     order="80"/>
-        </menuBar>
-
-        <!-- Sheet metal environment classic menu bar -->
-        <menuBar id="nx.sheet.menuBar" workbench="SheetMetal" label="NX Sheet Metal - Classic" order="40">
-            <menu id="menu_file"       label="File"        order="10"/>
-            <menu id="menu_edit"       label="Edit"        order="20"/>
-            <menu id="menu_sheetMetal" label="Sheet Metal" order="30"/>
-            <menu id="menu_sketch"     label="Sketch"      order="40"/>
-            <menu id="menu_view"       label="View"        order="50"/>
-            <menu id="menu_tools"      label="Tools"       order="60"/>
-            <menu id="menu_window"     label="Window"      order="70"/>
-            <menu id="menu_help"       label="Help"        order="80"/>
-        </menuBar>
-
+        <menuBars>
+        
+            <!-- Default startup home classic menu bar -->
+            <menuBar id="sd.home.menuBar" workbench="workbench.home" label="SD Part - Classic" order="10">
+                <menu id="menu_file"   label="File"   order="10"/>
+                <menu id="menu_edit"   label="Edit"   order="20"/>
+                <menu id="menu_view"   label="View"   order="30"/>
+                <menu id="menu_insert" label="Insert" order="40"/>
+                <menu id="menu_tools"  label="Tools"  order="50"/>
+                <menu id="menu_window" label="Window" order="60"/>
+                <menu id="menu_help"   label="Help"   order="70"/>
+            </menuBar>
+        
+            <!-- Part modeling classic menu bar -->
+            <menuBar id="sd.part.menuBar" workbench="workbench.part" label="SD Part - Classic" order="10">
+                <menu id="menu_file"   label="File"   order="10"/>
+                <menu id="menu_edit"   label="Edit"   order="20"/>
+                <menu id="menu_view"   label="View"   order="30"/>
+                <menu id="menu_insert" label="Insert" order="40"/>
+                <menu id="menu_tools"  label="Tools"  order="50"/>
+                <menu id="menu_window" label="Window" order="60"/>
+                <menu id="menu_help"   label="Help"   order="70"/>
+            </menuBar>
+            
+            <!-- Sketch environment classic menu bar -->
+            <menuBar id="sd.sketch.menuBar" workbench="workbench.sketch" label="SD Sketch - Classic" order="20">
+                <menu id="menu_file"       label="File"        order="10"/>
+                <menu id="menu_edit"       label="Edit"        order="20"/>
+                <menu id="menu_sketch"     label="Sketch"      order="30"/>
+                <menu id="menu_dimension"  label="Dimensions"  order="40"/>
+                <menu id="menu_constraint" label="Constraints" order="50"/>
+                <menu id="menu_view"       label="View"        order="60"/>
+                <menu id="menu_tools"      label="Tools"       order="70"/>
+                <menu id="menu_window"     label="Window"      order="80"/>
+                <menu id="menu_help"       label="Help"        order="90"/>
+            </menuBar>
+            
+            <!-- Assembly environment classic menu bar -->
+            <menuBar id="sd.asm.menuBar" workbench="workbench.assembly" label="SD Assembly - Classic" order="30">
+                <menu id="menu_file"     label="File"     order="10"/>
+                <menu id="menu_edit"     label="Edit"     order="20"/>
+                <menu id="menu_assembly" label="Assembly" order="30"/>
+                <menu id="menu_insert"   label="Insert"   order="40"/>
+                <menu id="menu_view"     label="View"     order="50"/>
+                <menu id="menu_tools"    label="Tools"    order="60"/>
+                <menu id="menu_window"   label="Window"   order="70"/>
+                <menu id="menu_help"     label="Help"     order="80"/>
+            </menuBar>
+            
+            <!-- Sheet metal environment classic menu bar -->
+            <menuBar id="sd.sheet.menuBar" workbench="workbench.part" label="SD Sheet Metal - Classic" order="40">
+                <menu id="menu_file"       label="File"        order="10"/>
+                <menu id="menu_edit"       label="Edit"        order="20"/>
+                <menu id="menu_sheetMetal" label="Sheet Metal" order="30"/>
+                <menu id="menu_sketch"     label="Sketch"      order="40"/>
+                <menu id="menu_view"       label="View"        order="50"/>
+                <menu id="menu_tools"      label="Tools"       order="60"/>
+                <menu id="menu_window"     label="Window"      order="70"/>
+                <menu id="menu_help"       label="Help"        order="80"/>
+            </menuBar>
+        </menuBars>
         <!-- ===================== Menu definitions (shared) ===================== -->
         <menus>
 

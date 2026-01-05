@@ -11,19 +11,13 @@ if(WIN32)
   set(CMAKE_PREFIX_PATH "C:/Qt/Qt5.15.14/5.15.14/msvc2019_64")
 endif()
 
-find_package(Qt5Core       5.15 REQUIRED)
-find_package(Qt5Gui        5.15 REQUIRED)
-find_package(Qt5Widgets    5.15 REQUIRED)
-
+find_package(Qt5 COMPONENTS Core Gui Widgets Network Quick Qml REQUIRED)
 
 message("${PROJECT_SOURCE_DIR}")
 
 
 FILE(GLOB SOURCE_FILES "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/*.cpp")
 FILE(GLOB HEADER_FILES "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/*.h")
-
-#source_group("" FILES ${SOURCE_FILES})
-#source_group("" FILES ${HEADER_FILES})
 
 
 set(RESOURCES ${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/StyleTemplate.qrc)
@@ -34,13 +28,6 @@ source_group("resources" FILES ${RESOURCES})
 # 库文件链接路径(ALICE_LIB_DIR 在上级定义了)
 #-----------------------------------------------------------------------------
 link_directories(${ALICE_LIB_DIR})
-
-#-----------------------------------------------------------------------------
-# 头文件搜索路径
-#-----------------------------------------------------------------------------
-include_directories(${CMAKE_SOURCE_DIR})
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(${PROJECT_SOURCE_DIR}/Alice/Core/Foundation/AliceBasicTool/Public)
 
 #=============================================================================
 #指定工程为动态库程序
@@ -53,6 +40,17 @@ set_target_properties(SolidDesignerUI PROPERTIES FOLDER "Designer/UI")
 target_compile_definitions(SolidDesignerUI
     PRIVATE
         SOLID_DESIGNER_UI_HOME
+)
+
+
+#-----------------------------------------------------------------------------
+# 头文件搜索路径<private文件夹的引用应该尽限于ALICE内部使用>
+#-----------------------------------------------------------------------------
+target_include_directories(SolidDesignerUI
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Public
+    ${PROJECT_SOURCE_DIR}/Alice/Core/Foundation/AliceBasicTool/Public
 )
 
 #-----------------------------------------------------------------------------

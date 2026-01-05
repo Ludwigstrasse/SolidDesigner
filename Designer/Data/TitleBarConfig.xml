@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TitleBarConfig version="1.0">
-
     <!-- ========================================================= -->
     <!-- Title bar declarations                                   -->
     <!-- ========================================================= -->
     <titlebars>
         <!-- Part / Modeling -->
         <titlebar id="sd.part.titlebar"
-                  workbench="Part"
+                  workbench="workbench.part"
                   label="SD Part TitleBar"/>
 
-        <!-- Sketch-in-Part / Sketch environment -->
+        <!-- Sketch environment -->
         <titlebar id="sd.sketch.titlebar"
-                  workbench="Sketch"
+                  workbench="workbench.sketch"
                   label="SD Sketch TitleBar"/>
 
         <!-- Assembly -->
         <titlebar id="sd.asm.titlebar"
-                  workbench="Assembly"
+                  workbench="workbench.assembly"
                   label="SD Assembly TitleBar"/>
 
-        <!-- Sheet Metal -->
-        <titlebar id="sd.sheet.titlebar"
-                  workbench="SheetMetal"
-                  label="SD Sheet Metal TitleBar"/>
+        <!-- Home -->
+        <titlebar id="sd.home.titlebar"
+                  workbench="workbench.home"
+                  label="SD Home TitleBar"/>
+
+        <!-- Drawing -->
+        <titlebar id="sd.drawing.titlebar"
+                  workbench="workbench.drawing"
+                  label="SD Drawing TitleBar"/>
+
+        <!-- Manufacturing -->
+        <titlebar id="sd.mfg.titlebar"
+                  workbench="workbench.mfg"
+                  label="SD Manufacturing TitleBar"/>
+
+        <!-- BIM -->
+        <titlebar id="sd.bim.titlebar"
+                  workbench="workbench.bim"
+                  label="SD Bim TitleBar"/>
     </titlebars>
 
 
@@ -35,64 +49,67 @@
         <!-- ===================== Part / Modeling ===================== -->
         <layout titlebar="sd.part.titlebar">
 
-            <!-- Left area: quick access commands -->
+            <!-- Left area: App + quick access commands -->
             <area id="left" order="10">
-                <!-- File button (opens big "File" dialog / backstage) -->
-                <control type="file-button"
-                         commandRef="ui.fileMenu"
+
+                <!-- app: SolidDesigner application button (left-most entry) -->
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
                          order="5"
-                         icon="icons/ui/file_menu.svg"
-                         label="File"/>
+                         iconRef="app"
+                         tooltip="SolidDesigner"/>
 
-                <!-- Undo / Redo -->
+                <!-- QAT: new/open/save/undo/redo/regenerate/windows/dropdown -->
                 <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+
+                <control type="command-button"
+                         id="undo"
                          commandRef="edit.undo"
-                         order="10"/>
+                         order="40"
+                         iconRef="undo"/>
+
                 <control type="command-button"
+                         id="redo"
                          commandRef="edit.redo"
-                         order="20"/>
+                         order="50"
+                         iconRef="redo"/>
 
-                <!-- Clipboard -->
                 <control type="command-button"
-                         commandRef="edit.cut"
-                         order="30"/>
-                <control type="command-button"
-                         commandRef="edit.copy"
-                         order="40"/>
-                <control type="command-button"
-                         commandRef="edit.paste"
-                         order="50"/>
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regenerate"/>
 
-                <!-- Drag between windows -->
-                <control type="command-button"
-                         commandRef="window.dragBetween"
-                         order="60"/>
+                <!-- windows: view/window management (needs dropdown arrow) -->
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
 
-                <!-- Minimize ribbon -->
-                <control type="command-button"
-                         commandRef="ui.minimizeRibbon"
-                         order="70"/>
-
-                <!-- Speech recognition -->
-                <control type="command-button"
-                         commandRef="ui.speechRecognition"
-                         order="80"/>
-
-                <!-- Touch mode -->
-                <control type="command-button"
-                         commandRef="ui.touchMode"
-                         order="90"/>
-
-                <!-- Switch window / Window menu / Toolbar options -->
-                <control type="command-button"
-                         commandRef="window.switch"
-                         order="100"/>
-                <control type="command-button"
-                         commandRef="window.menu"
-                         order="110"/>
-                <control type="command-button"
-                         commandRef="ui.toolbarOptions"
-                         order="120"/>
+                <!-- dropdown: QAT overflow / more -->
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
             </area>
 
             <!-- Center area: document title & environment label -->
@@ -100,36 +117,37 @@
                 <!-- These are not commands but data bindings -->
                 <control type="label"
                          id="label.documentTitle"
+                         order="10"
                          binding="document.title"
                          format="%document%"/>
+
                 <control type="label"
                          id="label.workbench"
+                         order="20"
                          binding="workbench.displayName"
                          format=" - %workbench%"/>
             </area>
 
-            <!-- Right area: brand + window buttons -->
+            <!-- Right area: window buttons -->
             <area id="right" order="30">
-                <!-- Brand button: SIEMENS / Alice logo -->
-                <control type="brand-button"
-                         commandRef="ui.brandMenu"
-                         order="5"
-                         icon="icons/brand/siemens.svg"
-                         tooltip="Product information"/>
-
                 <!-- Window system buttons -->
                 <control type="window-button"
-                         commandRef="ui.window.minimize"
+                         id="minimize"
                          order="10"
-                         role="minimize"/>
+                         role="minimize"
+                         iconRef="minimize"/>
+
                 <control type="window-button"
-                         commandRef="ui.window.restore"
-                         order="20"
-                         role="restore"/>
-                <control type="window-button"
-                         commandRef="ui.window.close"
+                         id="restore"
                          order="30"
-                         role="close"/>
+                         role="restore"
+                         iconRef="restore"/>
+
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
             </area>
         </layout>
 
@@ -137,197 +155,524 @@
         <layout titlebar="sd.sketch.titlebar">
 
             <area id="left" order="10">
-                <control type="file-button"
-                         commandRef="ui.fileMenu"
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
                          order="5"
-                         icon="icons/ui/file_menu.svg"
-                         label="File"/>
+                         iconRef="app"
+                         tooltip="SolidDesigner"/>
 
                 <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+
+                <control type="command-button"
+                         id="undo"
                          commandRef="edit.undo"
-                         order="10"/>
+                         order="40"
+                         iconRef="undo"/>
+
                 <control type="command-button"
+                         id="redo"
                          commandRef="edit.redo"
-                         order="20"/>
-
-                <!-- Sketch frequently used commands -->
-                <control type="command-button"
-                         commandRef="sketch.finish"
-                         order="30"/>
-                <control type="command-button"
-                         commandRef="sketch.cancel"
-                         order="40"/>
+                         order="50"
+                         iconRef="redo"/>
 
                 <control type="command-button"
-                         commandRef="ui.minimizeRibbon"
-                         order="70"/>
-                <control type="command-button"
-                         commandRef="ui.touchMode"
-                         order="80"/>
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
             </area>
 
             <area id="center" order="20">
                 <control type="label"
                          id="label.documentTitle"
+                         order="10"
                          binding="document.title"
                          format="%document%"/>
                 <control type="label"
                          id="label.workbench"
+                         order="20"
                          binding="workbench.displayName"
                          format=" - %workbench%"/>
             </area>
 
+            <!-- Right area: window buttons -->
             <area id="right" order="30">
-                <control type="brand-button"
-                         commandRef="ui.brandMenu"
-                         order="5"
-                         icon="icons/brand/siemens.svg"
-                         tooltip="Product information"/>
+                <!-- Window system buttons -->
+                <control type="window-button"
+                         id="minimize"
+                         order="10"
+                         role="minimize"
+                         iconRef="minimize"/>
 
                 <control type="window-button"
-                         commandRef="ui.window.minimize"
-                         order="10"
-                         role="minimize"/>
-                <control type="window-button"
-                         commandRef="ui.window.restore"
-                         order="20"
-                         role="restore"/>
-                <control type="window-button"
-                         commandRef="ui.window.close"
+                         id="restore"
                          order="30"
-                         role="close"/>
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
             </area>
         </layout>
 
         <!-- ===================== Assembly ===================== -->
         <layout titlebar="sd.asm.titlebar">
-
             <area id="left" order="10">
-                <control type="file-button"
-                         commandRef="ui.fileMenu"
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
                          order="5"
-                         icon="icons/ui/file_menu.svg"
-                         label="File"/>
+                         icon=":/TitleBar/brand/app.svg"
+                         tooltip="SolidDesigner"/>
 
                 <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+                <control type="command-button"
+                         id="undo"
                          commandRef="edit.undo"
-                         order="10"/>
+                         order="40"
+                         iconRef="undo"/>
                 <control type="command-button"
+                         id="redo"
                          commandRef="edit.redo"
-                         order="20"/>
-
-                <!-- Assembly often used -->
+                         order="50"
+                         iconRef="redo"/>
                 <control type="command-button"
-                         commandRef="asm.addComponent"
-                         order="30"/>
-                <control type="command-button"
-                         commandRef="asm.constraint"
-                         order="40"/>
-
-                <control type="command-button"
-                         commandRef="ui.minimizeRibbon"
-                         order="70"/>
-                <control type="command-button"
-                         commandRef="window.switch"
-                         order="80"/>
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
             </area>
 
             <area id="center" order="20">
                 <control type="label"
                          id="label.documentTitle"
+                         order="10"
                          binding="document.title"
                          format="%document%"/>
                 <control type="label"
                          id="label.workbench"
+                         order="20"
                          binding="workbench.displayName"
                          format=" - %workbench%"/>
             </area>
 
+            <!-- Right area: window buttons -->
             <area id="right" order="30">
-                <control type="brand-button"
-                         commandRef="ui.brandMenu"
-                         order="5"
-                         icon="icons/brand/siemens.svg"
-                         tooltip="Product information"/>
-
+                <!-- Window system buttons -->
                 <control type="window-button"
-                         commandRef="ui.window.minimize"
+                         id="minimize"
                          order="10"
-                         role="minimize"/>
-                <control type="window-button"
-                         commandRef="ui.window.restore"
-                         order="20"
-                         role="restore"/>
-                <control type="window-button"
-                         commandRef="ui.window.close"
+                         role="minimize"
+                         iconRef="minimize"/>
+                 <control type="window-button"
+                         id="restore"
                          order="30"
-                         role="close"/>
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
             </area>
         </layout>
 
-        <!-- ===================== Sheet Metal ===================== -->
-        <layout titlebar="sd.sheet.titlebar">
-
+        <!-- ===================== Home ===================== -->
+        <layout titlebar="sd.home.titlebar">
             <area id="left" order="10">
-                <control type="file-button"
-                         commandRef="ui.fileMenu"
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
+                         iconRef="app"
                          order="5"
-                         icon="icons/ui/file_menu.svg"
-                         label="File"/>
+                         tooltip="SolidDesigner"/>
 
                 <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+                <control type="command-button"
+                         id="undo"
                          commandRef="edit.undo"
-                         order="10"/>
+                         order="40"
+                         iconRef="undo"/>
                 <control type="command-button"
+                         id="redo"
                          commandRef="edit.redo"
-                         order="20"/>
-
-                <!-- Sheet metal hot commands -->
+                         order="50"
+                         iconRef="redo"/>
                 <control type="command-button"
-                         commandRef="sheet.baseFlange"
-                         order="30"/>
-                <control type="command-button"
-                         commandRef="sheet.edgeFlange"
-                         order="40"/>
-
-                <control type="command-button"
-                         commandRef="ui.minimizeRibbon"
-                         order="70"/>
-                <control type="command-button"
-                         commandRef="window.switch"
-                         order="80"/>
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
             </area>
 
             <area id="center" order="20">
                 <control type="label"
                          id="label.documentTitle"
+                         order="10"
                          binding="document.title"
                          format="%document%"/>
                 <control type="label"
                          id="label.workbench"
+                         order="20"
+                         binding="workbench.displayName"
+                         format=" - %workbench%"/>
+            </area>
+
+            <!-- Right area: window buttons -->
+            <area id="right" order="30">
+                <!-- Window system buttons -->
+                <control type="window-button"
+                         id="minimize"
+                         order="10"
+                         role="minimize"
+                         iconRef="minimize"/>
+                <control type="window-button"
+                         id="restore"
+                         order="30"
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
+            </area>
+        </layout>
+
+
+        <!-- ===================== Drawing ===================== -->
+        <layout titlebar="sd.drawing.titlebar">
+            <area id="left" order="10">
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
+                         iconRef="app"
+                         order="5"
+                         tooltip="SolidDesigner"/>
+
+                <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+                <control type="command-button"
+                         id="undo"
+                         commandRef="edit.undo"
+                         order="40"
+                         iconRef="undo"/>
+                <control type="command-button"
+                         id="redo"
+                         commandRef="edit.redo"
+                         order="50"
+                         iconRef="redo"/>
+                <control type="command-button"
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
+            </area>
+
+            <area id="center" order="20">
+                <control type="label"
+                         id="label.documentTitle"
+                         order="10"
+                         binding="document.title"
+                         format="%document%"/>
+                <control type="label"
+                         id="label.workbench"
+                         order="20"
                          binding="workbench.displayName"
                          format=" - %workbench%"/>
             </area>
 
             <area id="right" order="30">
-                <control type="brand-button"
-                         commandRef="ui.brandMenu"
-                         order="5"
-                         icon="icons/brand/siemens.svg"
-                         tooltip="Product information"/>
-
                 <control type="window-button"
-                         commandRef="ui.window.minimize"
+                         id="minimize"
                          order="10"
-                         role="minimize"/>
+                         role="minimize"
+                         iconRef="minimize"/>
                 <control type="window-button"
-                         commandRef="ui.window.restore"
-                         order="20"
-                         role="restore"/>
-                <control type="window-button"
-                         commandRef="ui.window.close"
+                         id="restore"
                          order="30"
-                         role="close"/>
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
+            </area>
+        </layout>
+
+
+        <!-- ===================== Manufacturing ===================== -->
+        <layout titlebar="sd.mfg.titlebar">
+            <area id="left" order="10">
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
+                         iconRef="app"
+                         order="5"
+                         tooltip="SolidDesigner"/>
+
+                <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+                <control type="command-button"
+                         id="undo"
+                         commandRef="edit.undo"
+                         order="40"
+                         iconRef="undo"/>
+                <control type="command-button"
+                         id="redo"
+                         commandRef="edit.redo"
+                         order="50"
+                         iconRef="redo"/>
+                <control type="command-button"
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
+            </area>
+
+            <area id="center" order="20">
+                <control type="label"
+                         id="label.documentTitle"
+                         order="10"
+                         binding="document.title"
+                         format="%document%"/>
+                <control type="label"
+                         id="label.workbench"
+                         order="20"
+                         binding="workbench.displayName"
+                         format=" - %workbench%"/>
+            </area>
+
+            <!-- Right area: window buttons -->
+            <area id="right" order="30">
+                <!-- Window system buttons -->
+                <control type="window-button"
+                         id="minimize"
+                         order="10"
+                         role="minimize"
+                         iconRef="minimize"/>
+                <control type="window-button"
+                         id="restore"
+                         order="30"
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
+            </area>
+        </layout>
+
+
+        <!-- ===================== BIM ===================== -->
+        <layout titlebar="sd.bim.titlebar">
+            <area id="left" order="10">
+                <control type="brand-button"
+                         id="app"
+                         commandRef="ui.appMenu"
+                         iconRef="app"
+                         order="5"
+                         tooltip="SolidDesigner"/>
+
+                <control type="command-button"
+                         id="new"
+                         commandRef="file.new"
+                         order="10"
+                         iconRef="new"/>
+                <control type="command-button"
+                         id="open"
+                         commandRef="file.open"
+                         order="20"
+                         iconRef="open"/>
+                <control type="command-button"
+                         id="save"
+                         commandRef="file.save"
+                         order="30"
+                         iconRef="save"/>
+                <control type="command-button"
+                         id="undo"
+                         commandRef="edit.undo"
+                         order="40"
+                         iconRef="undo"/>
+                <control type="command-button"
+                         id="redo"
+                         commandRef="edit.redo"
+                         order="50"
+                         iconRef="redo"/>
+                <control type="command-button"
+                         id="regenerate"
+                         commandRef="model.regenerate"
+                         order="60"
+                         iconRef="regen"/>
+                <control type="menu-button"
+                         id="windows"
+                         commandRef="ui.windowsMenu"
+                         order="70"
+                         iconRef="windows"/>
+                <control type="menu-button"
+                         id="dropdown"
+                         commandRef="ui.qatMenu"
+                         order="80"
+                         iconRef="qat"/>
+            </area>
+
+            <area id="center" order="20">
+                <control type="label"
+                         id="label.documentTitle"
+                         order="10"
+                         binding="document.title"
+                         format="%document%"/>
+                <control type="label"
+                         id="label.workbench"
+                         order="20"
+                         binding="workbench.displayName"
+                         format=" - %workbench%"/>
+            </area>
+
+            <!-- Right area: window buttons -->
+            <area id="right" order="30">
+                <control type="window-button"
+                         id="minimize"
+                         order="10"
+                         role="minimize"
+                         iconRef="minimize"/>
+                <control type="window-button"
+                         id="restore"
+                         order="30"
+                         role="restore"
+                         iconRef="restore"/>
+                <control type="window-button"
+                         id="close"
+                         order="40"
+                         role="close"
+                         iconRef="close"/>
             </area>
         </layout>
 

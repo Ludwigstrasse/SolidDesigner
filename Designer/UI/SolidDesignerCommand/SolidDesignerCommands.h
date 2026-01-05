@@ -76,6 +76,11 @@ namespace sdr
         inline constexpr std::string_view CURVE_STUDIOSPLINE             = "curve.studioSpline"; // Studio Spline
         inline constexpr std::string_view CURVE_TRIM                     = "curve.trim"; // Trim Curve
 
+        // === Category: data ===
+        inline constexpr std::string_view DATA_ERASENOTDISPLAYED         = "data.eraseNotDisplayed"; // Erase Not Displayed
+        inline constexpr std::string_view DATA_OPENLASTSESSION           = "data.openLastSession"; // Open Last Session
+        inline constexpr std::string_view DATA_SELECTWORKINGDIRECTORY    = "data.selectWorkingDirectory"; // Select Working Directory
+
         // === Category: datum ===
         inline constexpr std::string_view DATUM_AXIS                     = "datum.axis"; // Axis
         inline constexpr std::string_view DATUM_CS                       = "datum.cs"; // Coordinate System
@@ -207,6 +212,10 @@ namespace sdr
         inline constexpr std::string_view SELECT_RECTANGLE               = "select.rectangle"; // Rectangle Select
         inline constexpr std::string_view SELECT_SINGLE                  = "select.single"; // Single Select
         inline constexpr std::string_view SKETCH_SELECT                  = "sketch.select"; // Select
+
+        // === Category: settings ===
+        inline constexpr std::string_view SETTINGS_MODELDISPLAY          = "settings.modelDisplay"; // Model Display
+        inline constexpr std::string_view SETTINGS_SYSTEMAPPEARANCE      = "settings.systemAppearance"; // System Appearance
 
         // === Category: shapes ===
         inline constexpr std::string_view MODEL_BLEND                    = "model.blend"; // Blend
@@ -346,6 +355,15 @@ namespace sdr
         inline constexpr std::string_view UI_RESTORELAYOUT               = "ui.restoreLayout"; // Restore Layout
         inline constexpr std::string_view UI_SAVELAYOUT                  = "ui.saveLayout"; // Save Layout
         inline constexpr std::string_view UI_TOGGLEMODE                  = "ui.toggleMode"; // Toggle Ribbon / Classic
+
+        // === Category: ui.titlebar ===
+        inline constexpr std::string_view UI_APPMENU                     = "ui.appMenu"; // SolidDesigner
+        inline constexpr std::string_view UI_QATMENU                     = "ui.qatMenu"; // Quick Access
+        inline constexpr std::string_view UI_WINDOWSMENU                 = "ui.windowsMenu"; // Windows
+
+        // === Category: utilities ===
+        inline constexpr std::string_view UTILITIES_AUXAPPLICATION       = "utilities.auxApplication"; // Auxiliary Application
+        inline constexpr std::string_view UTILITIES_PLAYTRAILFILE        = "utilities.playTrailFile"; // Play Trail File
 
         // === Category: view ===
         inline constexpr std::string_view VIEW_CLIPPINGPLANE             = "view.clippingPlane"; // Clipping Plane

@@ -1,7 +1,7 @@
 ##########################################################################################################
 #--Date:    2021.03.10
 #--Project: SolidRender
-#--Author:  hubery.x.hsu
+#--Author:  hananiah
 #--Note:位于SolidRender顶级目录下面
 #--2021.10.03: 增加INSTALL项目，实现工程的自动安装功能
 #              今日对工程的生成目录做重大调整，以后禁止VS工程的路径与源码同目录
@@ -158,24 +158,6 @@ endif()
 # set(CMAKE_AUTORCC ON)
 # set(CMAKE_AUTOUIC ON)
 
-# 解决无法跳转到头文件的问题
-set(QTDIR_X64 $ENV{QTDIR})
-set(QTDIR_X64_include $ENV{QTDIR}/include)
-set(QTDIR_X64_include_ActiveQt $ENV{QTDIR}/include/ActiveQt)
-set(QTDIR_X64_include_QtCore $ENV{QTDIR}/include/QtCore)
-set(QTDIR_X64_include_QtNetwork $ENV{QTDIR}/include/QtNetwork)
-set(QTDIR_X64_include_QtWidgets $ENV{QTDIR}/include/QtWidgets)
-set(QTDIR_X64_include_QtWebEngineWidgets $ENV{QTDIR}/include/QtWebEngineWidgets)
-set(QTDIR_X64_include_QtGui $ENV{QTDIR}/include/QtGui)
-set(QTDIR_X64_include_QtXml $ENV{QTDIR}/include/QtXml)
-set(QTDIR_X64_include_QtScript $ENV{QTDIR}/include/QtScript)
-set(QTDIR_X64_QtScriptTools $ENV{QTDIR}/include/QtScriptTools)
-set(QTDIR_X64_include_QtScriptTools $ENV{QTDIR}/include/QtScriptTools)
-set(QTDIR_X64_include_QtWidgets_5_15_14_QtWidgets $ENV{QTDIR}/include/QtWidgets/5.15.14/QtWidgets)
-set(QTDIR_X64_include_QtCore_5_15_14_QtCore ${QTDIR}/include/QtCore/5.15.14/QtCore)
-set(QTDIR_X64_include_QtConcurrent $ENV{QTDIR}/include/QtConcurrent)
-set(QTDIR_X64_mkspecs_win32_msvc ${QTDIR}/mkspecs/win32-msvc)
-set(QTDIR_X64_lib $ENV{QTDIR}/lib)
 
 #----------------------------------------------------------------------------
 # 开启项目分组

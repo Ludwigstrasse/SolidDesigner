@@ -1,0 +1,114 @@
+<RCC>
+<qresource prefix="/TitleBar">
+    <file>brand/light/png/16/app.png</file>
+    <file>brand/light/png/32/app.png</file>
+    <file>brand/light/png/48/app.png</file>
+    <file>brand/light/png/64/app.png</file>
+    <file>brand/dark/png/16/app.png</file>
+    <file>brand/dark/png/32/app.png</file>
+    <file>brand/dark/png/48/app.png</file>
+    <file>brand/dark/png/64/app.png</file>
+
+    <file>quick/light/png/16/new.png</file>
+    <file>quick/light/png/32/new.png</file>
+    <file>quick/light/png/48/new.png</file>
+    <file>quick/light/png/64/new.png</file>
+    <file>quick/dark/png/16/new.png</file>
+    <file>quick/dark/png/32/new.png</file>
+    <file>quick/dark/png/48/new.png</file>
+    <file>quick/dark/png/64/new.png</file>
+
+    <file>quick/light/png/16/open.png</file>
+    <file>quick/light/png/32/open.png</file>
+    <file>quick/light/png/48/open.png</file>
+    <file>quick/light/png/64/open.png</file>
+    <file>quick/dark/png/16/open.png</file>
+    <file>quick/dark/png/32/open.png</file>
+    <file>quick/dark/png/48/open.png</file>
+    <file>quick/dark/png/64/open.png</file>
+
+    <file>quick/light/png/16/save.png</file>
+    <file>quick/light/png/32/save.png</file>
+    <file>quick/light/png/48/save.png</file>
+    <file>quick/light/png/64/save.png</file>
+    <file>quick/dark/png/16/save.png</file>
+    <file>quick/dark/png/32/save.png</file>
+    <file>quick/dark/png/48/save.png</file>
+    <file>quick/dark/png/64/save.png</file>
+
+    <file>quick/light/png/16/undo.png</file>
+    <file>quick/light/png/32/undo.png</file>
+    <file>quick/light/png/48/undo.png</file>
+    <file>quick/light/png/64/undo.png</file>
+    <file>quick/dark/png/16/undo.png</file>
+    <file>quick/dark/png/32/undo.png</file>
+    <file>quick/dark/png/48/undo.png</file>
+    <file>quick/dark/png/64/undo.png</file>
+    
+    <file>quick/light/png/16/redo.png</file>
+    <file>quick/light/png/32/redo.png</file>
+    <file>quick/light/png/48/redo.png</file>
+    <file>quick/light/png/64/redo.png</file>
+    <file>quick/dark/png/16/redo.png</file>
+    <file>quick/dark/png/32/redo.png</file>
+    <file>quick/dark/png/48/redo.png</file>
+    <file>quick/dark/png/64/redo.png</file>
+    
+    <file>quick/light/png/16/regenerate.png</file>
+    <file>quick/light/png/32/regenerate.png</file>
+    <file>quick/light/png/48/regenerate.png</file>
+    <file>quick/light/png/64/regenerate.png</file>
+    <file>quick/dark/png/16/regenerate.png</file>
+    <file>quick/dark/png/32/regenerate.png</file>
+    <file>quick/dark/png/48/regenerate.png</file>
+    <file>quick/dark/png/64/regenerate.png</file>
+    
+    <file>quick/light/png/16/windows.png</file>
+    <file>quick/light/png/32/windows.png</file>
+    <file>quick/light/png/48/windows.png</file>
+    <file>quick/light/png/64/windows.png</file>
+    <file>quick/dark/png/16/windows.png</file>
+    <file>quick/dark/png/32/windows.png</file>
+    <file>quick/dark/png/48/windows.png</file>
+    <file>quick/dark/png/64/windows.png</file>
+    
+    <file>quick/light/png/16/qat.png</file>
+    <file>quick/light/png/32/qat.png</file>
+    <file>quick/light/png/48/qat.png</file>
+    <file>quick/light/png/64/qat.png</file>
+    <file>quick/dark/png/16/qat.png</file>
+    <file>quick/dark/png/32/qat.png</file>
+    <file>quick/dark/png/48/qat.png</file>
+    <file>quick/dark/png/64/qat.png</file>
+    
+    
+    <file>window/light/png/16/minimize.png</file>
+    <file>window/light/png/32/minimize.png</file>
+    <file>window/light/png/48/minimize.png</file>
+    <file>window/light/png/64/minimize.png</file>
+    <file>window/dark/png/16/minimize.png</file>
+    <file>window/dark/png/32/minimize.png</file>
+    <file>window/dark/png/48/minimize.png</file>
+    <file>window/dark/png/64/minimize.png</file>
+    
+    
+    <file>window/light/png/16/restore.png</file>
+    <file>window/light/png/32/restore.png</file>
+    <file>window/light/png/48/restore.png</file>
+    <file>window/light/png/64/restore.png</file>
+    <file>window/dark/png/16/restore.png</file>
+    <file>window/dark/png/32/restore.png</file>
+    <file>window/dark/png/48/restore.png</file>
+    <file>window/dark/png/64/restore.png</file>
+    
+    <file>window/light/png/16/close.png</file>
+    <file>window/light/png/32/close.png</file>
+    <file>window/light/png/48/close.png</file>
+    <file>window/light/png/64/close.png</file>
+    <file>window/dark/png/16/close.png</file>
+    <file>window/dark/png/32/close.png</file>
+    <file>window/dark/png/48/close.png</file>
+    <file>window/dark/png/64/close.png</file>
+
+</qresource>
+</RCC>
