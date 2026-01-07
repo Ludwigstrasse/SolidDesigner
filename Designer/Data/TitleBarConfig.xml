@@ -65,19 +65,19 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
 
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
 
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
 
                 <control type="command-button"
                          id="undo"
@@ -106,7 +106,7 @@
 
                 <!-- dropdown: QAT overflow / more -->
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -116,16 +116,10 @@
             <area id="center" order="20">
                 <!-- These are not commands but data bindings -->
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <!-- Right area: window buttons -->
@@ -166,19 +160,19 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
 
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
 
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
 
                 <control type="command-button"
                          id="undo"
@@ -196,7 +190,7 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
 
                 <control type="menu-button"
                          id="windows"
@@ -205,7 +199,7 @@
                          iconRef="windows"/>
 
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -213,15 +207,10 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <!-- Right area: window buttons -->
@@ -260,17 +249,17 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
                 <control type="command-button"
                          id="undo"
                          commandRef="edit.undo"
@@ -285,14 +274,14 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
                 <control type="menu-button"
                          id="windows"
                          commandRef="ui.windowsMenu"
                          order="70"
                          iconRef="windows"/>
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -300,15 +289,11 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
+
             </area>
 
             <!-- Right area: window buttons -->
@@ -346,17 +331,17 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
                 <control type="command-button"
                          id="undo"
                          commandRef="edit.undo"
@@ -371,14 +356,14 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
                 <control type="menu-button"
                          id="windows"
                          commandRef="ui.windowsMenu"
                          order="70"
                          iconRef="windows"/>
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -386,15 +371,10 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <!-- Right area: window buttons -->
@@ -433,17 +413,17 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
                 <control type="command-button"
                          id="undo"
                          commandRef="edit.undo"
@@ -458,14 +438,14 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
                 <control type="menu-button"
                          id="windows"
                          commandRef="ui.windowsMenu"
                          order="70"
                          iconRef="windows"/>
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -473,15 +453,10 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <area id="right" order="30">
@@ -518,17 +493,17 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
                 <control type="command-button"
                          id="undo"
                          commandRef="edit.undo"
@@ -543,14 +518,14 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
                 <control type="menu-button"
                          id="windows"
                          commandRef="ui.windowsMenu"
                          order="70"
                          iconRef="windows"/>
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -558,15 +533,10 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <!-- Right area: window buttons -->
@@ -605,17 +575,17 @@
                          id="new"
                          commandRef="file.new"
                          order="10"
-                         iconRef="new"/>
+                         iconRef="file.new"/>
                 <control type="command-button"
                          id="open"
                          commandRef="file.open"
                          order="20"
-                         iconRef="open"/>
+                         iconRef="file.open"/>
                 <control type="command-button"
                          id="save"
                          commandRef="file.save"
                          order="30"
-                         iconRef="save"/>
+                         iconRef="file.save"/>
                 <control type="command-button"
                          id="undo"
                          commandRef="edit.undo"
@@ -630,14 +600,14 @@
                          id="regenerate"
                          commandRef="model.regenerate"
                          order="60"
-                         iconRef="regen"/>
+                         iconRef="regenerate"/>
                 <control type="menu-button"
                          id="windows"
                          commandRef="ui.windowsMenu"
                          order="70"
                          iconRef="windows"/>
                 <control type="menu-button"
-                         id="dropdown"
+                         id="qat"
                          commandRef="ui.qatMenu"
                          order="80"
                          iconRef="qat"/>
@@ -645,15 +615,10 @@
 
             <area id="center" order="20">
                 <control type="label"
-                         id="label.documentTitle"
+                         id="label.windowTitle"
                          order="10"
-                         binding="document.title"
-                         format="%document%"/>
-                <control type="label"
-                         id="label.workbench"
-                         order="20"
-                         binding="workbench.displayName"
-                         format=" - %workbench%"/>
+                         binding="window.title"
+                         format="%title%"/>
             </area>
 
             <!-- Right area: window buttons -->

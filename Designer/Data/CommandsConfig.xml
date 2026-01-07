@@ -95,7 +95,7 @@
                  tooltip="Quick access toolbar options"
                  category="ui.titlebar"
                  iconRef="qat"
-                 icon=":/TitleBar/commands/quickaccess.svg"
+                 icon=":/TitleBar/quick/light/svg/qat.svg"
                  environments="workbench.home,workbench.part,workbench.sketch,workbench.assembly,workbench.drawing,workbench.mfg,workbench.bim"/>
 
         <!-- ===== Edit commands ===== -->

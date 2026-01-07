@@ -16,7 +16,7 @@
             <theme name="light" svg=":/TitleBar/quick/light/open.svg" png16=":/TitleBar/quick/light/png/16/open.png" png32=":/TitleBar/quick/light/png/32/open.png" png48=":/TitleBar/quick/light/png/48/open.png" png64=":/TitleBar/quick/light/png/64/open.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/open.svg" png16=":/TitleBar/quick/dark/png/16/open.png" png32=":/TitleBar/quick/dark/png/32/open.png" png48=":/TitleBar/quick/dark/png/48/open.png" png64=":/TitleBar/quick/dark/png/64/open.png"/>
         </icon>
-        <icon id="save">
+        <icon id="file.save">
             <theme name="light" svg=":/TitleBar/quick/light/save.svg" png16=":/TitleBar/quick/light/png/16/save.png" png32=":/TitleBar/quick/light/png/32/save.png" png48=":/TitleBar/quick/light/png/48/save.png" png64=":/TitleBar/quick/light/png/64/save.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/save.svg" png16=":/TitleBar/quick/dark/png/16/save.png" png32=":/TitleBar/quick/dark/png/32/save.png" png48=":/TitleBar/quick/dark/png/48/save.png" png64=":/TitleBar/quick/dark/png/64/save.png"/>
         </icon>
@@ -28,17 +28,17 @@
             <theme name="light" svg=":/TitleBar/quick/light/redo.svg" png16=":/TitleBar/quick/light/png/16/redo.png" png32=":/TitleBar/quick/light/png/32/redo.png" png48=":/TitleBar/quick/light/png/48/redo.png" png64=":/TitleBar/quick/light/png/64/redo.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/redo.svg" png16=":/TitleBar/quick/dark/png/16/redo.png" png32=":/TitleBar/quick/dark/png/32/redo.png" png48=":/TitleBar/quick/dark/png/48/redo.png" png64=":/TitleBar/quick/dark/png/64/redo.png"/>
         </icon>
-        <icon id="regen">
-            <theme name="light" svg=":/TitleBar/quick/light/regen.svg" png16=":/TitleBar/quick/light/png/16/regenerate.png" png32=":/TitleBar/quick/light/png/32/regenerate.png" png48=":/TitleBar/quick/light/png/48/regenerate.png" png64=":/TitleBar/quick/light/png/64/regenerate.png"/>
-            <theme name="dark" svg=":/TitleBar/quick/dark/regen.svg" png16=":/TitleBar/quick/dark/png/16/regenerate.png" png32=":/TitleBar/quick/dark/png/32/regenerate.png" png48=":/TitleBar/quick/dark/png/48/regenerate.png" png64=":/TitleBar/quick/dark/png/64/regenerate.png"/>
+        <icon id="regenerate">
+            <theme name="light" svg=":/TitleBar/quick/light/regenerate.svg" png16=":/TitleBar/quick/light/png/16/regenerate.png" png32=":/TitleBar/quick/light/png/32/regenerate.png" png48=":/TitleBar/quick/light/png/48/regenerate.png" png64=":/TitleBar/quick/light/png/64/regenerate.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/regenerate.svg" png16=":/TitleBar/quick/dark/png/16/regenerate.png" png32=":/TitleBar/quick/dark/png/32/regenerate.png" png48=":/TitleBar/quick/dark/png/48/regenerate.png" png64=":/TitleBar/quick/dark/png/64/regenerate.png"/>
         </icon>
         <icon id="windows">
             <theme name="light" svg=":/TitleBar/quick/light/windows.svg" png16=":/TitleBar/quick/light/png/16/windows.png" png32=":/TitleBar/quick/light/png/32/windows.png" png48=":/TitleBar/quick/light/png/48/windows.png" png64=":/TitleBar/quick/light/png/64/windows.png"/>
             <theme name="dark" svg=":/TitleBar/quick/dark/windows.svg" png16=":/TitleBar/quick/dark/png/16/windows.png" png32=":/TitleBar/quick/dark/png/32/windows.png" png48=":/TitleBar/quick/dark/png/48/windows.png" png64=":/TitleBar/quick/dark/png/64/windows.png"/>
         </icon>
         <icon id="qat">
-            <theme name="light" svg=":/TitleBar/quick/light/quickaccess.svg" png16=":/TitleBar/quick/light/png/16/dropdown.png" png32=":/TitleBar/quick/light/png/32/dropdown.png" png48=":/TitleBar/quick/light/png/48/dropdown.png" png64=":/TitleBar/quick/light/png/64/dropdown.png"/>
-            <theme name="dark" svg=":/TitleBar/quick/dark/quickaccess.svg" png16=":/TitleBar/quick/dark/png/16/dropdown.png" png32=":/TitleBar/quick/dark/png/32/dropdown.png" png48=":/TitleBar/quick/dark/png/48/dropdown.png" png64=":/TitleBar/quick/dark/png/64/dropdown.png"/>
+            <theme name="light" svg=":/TitleBar/quick/light/qat.svg" png16=":/TitleBar/quick/light/png/16/qat.png" png32=":/TitleBar/quick/light/png/32/qat.png" png48=":/TitleBar/quick/light/png/48/qat.png" png64=":/TitleBar/quick/light/png/64/qat.png"/>
+            <theme name="dark" svg=":/TitleBar/quick/dark/qat.svg" png16=":/TitleBar/quick/dark/png/16/qat.png" png32=":/TitleBar/quick/dark/png/32/qat.png" png48=":/TitleBar/quick/dark/png/48/qat.png" png64=":/TitleBar/quick/dark/png/64/qat.png"/>
         </icon>
         <icon id="minimize">
             <theme name="light" svg=":/TitleBar/window/light/minimize.svg" png16=":/TitleBar/window/light/png/16/minimize.png" png32=":/TitleBar/window/light/png/32/minimize.png" png48=":/TitleBar/window/light/png/48/minimize.png" png64=":/TitleBar/window/light/png/64/minimize.png"/>
