@@ -15,14 +15,18 @@ find_package(Qt5 COMPONENTS Core Gui Widgets Network Quick Qml REQUIRED)
 
 message("${PROJECT_SOURCE_DIR}")
 
-
-FILE(GLOB SOURCE_FILES "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/*.cpp")
-FILE(GLOB HEADER_FILES "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/*.h")
-
-
 set(RESOURCES ${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/StyleTemplate.qrc)
 source_group("resources" FILES ${RESOURCES})
 
+set(ABS_SDU "${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI")
+
+file(GLOB SDU_FILES
+  "${ABS_SDU}/*.cpp" "${ABS_SDU}/*.h"
+  "${ABS_SDU}/Public/*.h"
+  "${ABS_SDU}/GeneralDialogs/*.h" "${ABS_SDU}/GeneralDialogs/*.cpp"
+)
+
+source_group(TREE "${ABS_SDU}" FILES ${SDU_FILES})
 
 #-----------------------------------------------------------------------------
 # 库文件链接路径(ALICE_LIB_DIR 在上级定义了)
@@ -31,7 +35,7 @@ link_directories(${ALICE_LIB_DIR})
 
 #=============================================================================
 #指定工程为动态库程序
-add_library(SolidDesignerUI SHARED ${SOURCE_FILES} ${HEADER_FILES})
+add_library(SolidDesignerUI SHARED ${SDU_FILES})
 #设定工程的过滤器
 set_target_properties(SolidDesignerUI PROPERTIES FOLDER "Designer/UI")
 #=============================================================================
@@ -51,6 +55,8 @@ target_include_directories(SolidDesignerUI
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/Public
     ${PROJECT_SOURCE_DIR}/Alice/Core/Foundation/AliceBasicTool/Public
+    ${PROJECT_SOURCE_DIR}/Alice/UI/QFrameWork/AliceUiBasicTools/Public
+    ${PROJECT_SOURCE_DIR}/Alice/Data/Interface/AliceModelInterface/Public
 )
 
 #-----------------------------------------------------------------------------
@@ -115,7 +121,15 @@ endif()
 # @1、链接的动作需要放到add_library之后
 #-----------------------------------------------------------------------------
 target_link_libraries(SolidDesignerUI PRIVATE
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets
+    Qt5::Network
+    Qt5::Quick
+    Qt5::Qml
     AliceBasicTool
+    AliceUiBasicTools
+    AliceModelInterface
 )
 
 

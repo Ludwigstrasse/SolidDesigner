@@ -18,6 +18,7 @@ else()
 
 endif()
 
+find_package(Qt5 COMPONENTS Core Gui Widgets Network Quick Qml REQUIRED)
 
 # 然后再找 Python3
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
@@ -58,7 +59,7 @@ include_directories(${PROJECT_SOURCE_DIR}/Alice/Interaction/Interface/AliceCoreA
 include_directories(${PROJECT_SOURCE_DIR}/Alice/Data/Interface/AliceModelInterface/Public)
 
 include_directories(${PROJECT_SOURCE_DIR}/Alice/UI/QFrameWork/AliceUiFrameWork/Public)
-
+include_directories(${PROJECT_SOURCE_DIR}/Designer/UI/SolidDesignerUI/Public)
 
 #-----------------------------------------------------------------------------
 # 定义项目构建中间文件的生成目录
@@ -165,6 +166,12 @@ set_target_properties(SolidDesignerCommandsId PROPERTIES FOLDER "Designer/UI")
 # 链接第三方的库 链接的动作需要放到add_library之后
 #-----------------------------------------------------------------------------
 target_link_libraries(SolidDesignerCommand PRIVATE
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets
+    Qt5::Network
+    Qt5::Quick
+    Qt5::Qml
     AliceFoundation
     AliceBasicTool
     AliceCoreApplicationInterface
@@ -173,6 +180,7 @@ target_link_libraries(SolidDesignerCommand PRIVATE
     AliceModelInterface
     AliceUiFrameWork
     AlicePluginSystem
+    SolidDesignerUI
 )
 
 

@@ -1,1 +1,5 @@
 ﻿#include "SolidDesignerUI.h"
+
+
+// {C4E3ACB8-8CCD-45C5-BD20-76E6F62E384E}
+const Guid soliddesignerui::MODULE_ID = { 0xc4e3acb8, 0x8ccd, 0x45c5, { 0xbd, 0x20, 0x76, 0xe6, 0xf6, 0x2e, 0x38, 0x4e } };
