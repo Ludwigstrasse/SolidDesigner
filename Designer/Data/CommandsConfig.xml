@@ -223,7 +223,7 @@
                  iconRef="file.new"
                  icon="icons/file/new.svg"
                  gesture="Ctrl+N"
-                 environments="workbench.part,workbench.sketch,workbench.assembly"/>
+                 environments="workbench.home,workbench.part,workbench.sketch,workbench.assembly"/>
 
         <command id="file.open"
                  label="Open"
@@ -232,7 +232,7 @@
                  iconRef="file.open"
                  icon="icons/file/open.svg"
                  gesture="Ctrl+O"
-                 environments="workbench.part,workbench.sketch,workbench.assembly"/>
+                 environments="workbench.home,workbench.part,workbench.sketch,workbench.assembly"/>
 
         <command id="file.save"
                  label="Save"
@@ -344,7 +344,7 @@
                  category="curve"
                  iconRef="curve.centerline"
                  icon="icons/curve/centerline.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="curve.arc"
                  label="Arc"
@@ -448,7 +448,7 @@
                  category="curve"
                  iconRef="curve.ellipse"
                  icon="icons/curve/ellipse.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="curve.ellipse.axisAndEnds"
                  label="Axis and Ends Ellipse"
@@ -456,7 +456,7 @@
                  category="curve"
                  iconRef="curve.ellipse_axis_ends"
                  icon="icons/curve/ellipse_axis_ends.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="curve.ellipse.centerAndAxis"
                  label="Center and Axis Ellipse"
@@ -464,7 +464,7 @@
                  category="curve"
                  iconRef="curve.ellipse_center_axis"
                  icon="icons/curve/ellipse_center_axis.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="curve.rectangle.corner"
                  label="Corner Rectangle"
@@ -570,62 +570,78 @@
                  icon="icons/curve/offset.svg"
                  environments="workbench.part,workbench.sketch"/>
 
+        <command id="sketch.constructionMode"
+                 label="Construction Mode"
+                 tooltip="Toggle construction geometry mode"
+                 category="sketch.mode"
+                 iconRef="sketch.construction_mode"
+                 icon="icons/sketch/construction_mode.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.palette"
+                 label="Palette"
+                 tooltip="Open sketch palette"
+                 category="sketch.ui"
+                 iconRef="sketch.palette"
+                 icon="icons/sketch/palette.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
         <!-- ===== Sketch-only: dimensions / constraints / modify ===== -->
-        <command id="sketch.dim.horizontal"
-                 label="Horizontal Dimension"
-                 tooltip="Create horizontal linear dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_horizontal"
-                 icon="icons/sketch/dim_horizontal.svg"
-                 environments="workbench.sketch"/>
-
-        <command id="sketch.dim.vertical"
-                 label="Vertical Dimension"
-                 tooltip="Create vertical linear dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_vertical"
-                 icon="icons/sketch/dim_vertical.svg"
-                 environments="workbench.sketch"/>
-
-        <command id="sketch.dim.radius"
-                 label="Radius Dimension"
-                 tooltip="Create radius dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_radius"
-                 icon="icons/sketch/dim_radius.svg"
-                 environments="workbench.sketch"/>
-
-        <command id="sketch.dim.diameter"
-                 label="Diameter Dimension"
-                 tooltip="Create diameter dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_diameter"
-                 icon="icons/sketch/dim_diameter.svg"
-                 environments="workbench.sketch"/>
-
-        <command id="sketch.dim.angle"
-                 label="Angular Dimension"
-                 tooltip="Create angular dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_angle"
-                 icon="icons/sketch/dim_angle.svg"
-                 environments="workbench.sketch"/>
-
-        <command id="sketch.dim.general"
-                 label="Smart Dimension"
-                 tooltip="Create smart dimensions"
-                 category="sketch.dim"
-                 iconRef="sketch.dim_smart"
-                 icon="icons/sketch/dim_smart.svg"
-                 environments="workbench.sketch"/>
-
         <command id="sketch.dim.dimension"
                  label="Dimension"
                  tooltip="Create sketch dimensions"
                  category="sketch.dim"
                  iconRef="sketch.dim_smart"
                  icon="icons/sketch/dim_smart.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.general"
+                 label="General"
+                 tooltip="Create general dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_general"
+                 icon="icons/sketch/dim_general.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.horizontal"
+                 label="Horizontal"
+                 tooltip="Create horizontal dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_horizontal"
+                 icon="icons/sketch/dim_horizontal.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.vertical"
+                 label="Vertical"
+                 tooltip="Create vertical dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_vertical"
+                 icon="icons/sketch/dim_vertical.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.radius"
+                 label="Radius"
+                 tooltip="Create radius dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_radius"
+                 icon="icons/sketch/dim_radius.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.diameter"
+                 label="Diameter"
+                 tooltip="Create diameter dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_diameter"
+                 icon="icons/sketch/dim_diameter.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.dim.angle"
+                 label="Angle"
+                 tooltip="Create angular dimensions"
+                 category="sketch.dim"
+                 iconRef="sketch.dim_angle"
+                 icon="icons/sketch/dim_angle.svg"
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.dim.reference"
                  label="Reference"
@@ -633,7 +649,7 @@
                  category="sketch.dim"
                  iconRef="sketch.dim_reference"
                  icon="icons/sketch/dim_reference.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.dim.baseline"
                  label="Baseline"
@@ -641,7 +657,7 @@
                  category="sketch.dim"
                  iconRef="sketch.dim_baseline"
                  icon="icons/sketch/dim_baseline.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.dim.perimeter"
                  label="Perimeter"
@@ -649,7 +665,7 @@
                  category="sketch.dim"
                  iconRef="sketch.dim_perimeter"
                  icon="icons/sketch/dim_perimeter.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.horizontal"
                  label="Horizontal"
@@ -657,7 +673,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_horizontal"
                  icon="icons/sketch/constr_horizontal.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.vertical"
                  label="Vertical"
@@ -665,7 +681,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_vertical"
                  icon="icons/sketch/constr_vertical.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.parallel"
                  label="Parallel"
@@ -673,7 +689,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_parallel"
                  icon="icons/sketch/constr_parallel.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.perpendicular"
                  label="Perpendicular"
@@ -681,7 +697,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_perp"
                  icon="icons/sketch/constr_perp.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.tangent"
                  label="Tangent"
@@ -689,7 +705,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_tangent"
                  icon="icons/sketch/constr_tangent.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.midPoint"
                  label="Mid-point"
@@ -697,7 +713,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_midpoint"
                  icon="icons/sketch/constr_midpoint.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.coincident"
                  label="Coincident"
@@ -705,7 +721,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_coincident"
                  icon="icons/sketch/constr_coincident.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.equal"
                  label="Equal"
@@ -713,7 +729,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_equal"
                  icon="icons/sketch/constr_equal.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.symmetric"
                  label="Symmetric"
@@ -721,7 +737,7 @@
                  category="sketch.constraint"
                  iconRef="sketch.constr_symmetric"
                  icon="icons/sketch/constr_symmetric.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.constraint.fix"
                  label="Fix"
@@ -737,7 +753,7 @@
                  category="sketch.modify"
                  iconRef="sketch.trim"
                  icon="icons/sketch/trim.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.extend"
                  label="Extend"
@@ -745,7 +761,7 @@
                  category="sketch.modify"
                  iconRef="sketch.extend"
                  icon="icons/sketch/extend.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.fillet"
                  label="Fillet"
@@ -753,7 +769,7 @@
                  category="sketch.modify"
                  iconRef="sketch.fillet"
                  icon="icons/sketch/fillet.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.offset"
                  label="Offset"
@@ -761,7 +777,7 @@
                  category="sketch.modify"
                  iconRef="sketch.offset"
                  icon="icons/sketch/offset.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.mirror"
                  label="Mirror"
@@ -769,7 +785,7 @@
                  category="sketch.modify"
                  iconRef="sketch.mirror"
                  icon="icons/sketch/mirror.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.pattern"
                  label="Pattern"
@@ -777,7 +793,7 @@
                  category="sketch.modify"
                  iconRef="sketch.pattern"
                  icon="icons/sketch/pattern.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== Model tab: Sketch ===== -->
@@ -788,7 +804,7 @@
                  category="sketch"
                  iconRef="sketch.setup"
                  icon="icons/sketch/setup.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.references"
                  label="References"
@@ -796,7 +812,7 @@
                  category="sketch"
                  iconRef="sketch.references"
                  icon="icons/sketch/references.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.view"
                  label="Sketch View"
@@ -804,7 +820,7 @@
                  category="sketch"
                  iconRef="sketch.view"
                  icon="icons/sketch/view.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.section.setHorizontalReference"
                  label="Set horizontal reference"
@@ -876,7 +892,7 @@
                  category="sketch"
                  iconRef="sketch.display_grid"
                  icon="icons/sketch/display_grid.svg"
-                 environments="sketch"/>
+                 environments="workbench.sketch,sketch"/>
 
         <command id="sketch.gridSettings"
                  label="Grid Settings"
@@ -884,7 +900,7 @@
                  category="sketch"
                  iconRef="sketch.grid_settings"
                  icon="icons/sketch/grid_settings.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.properties"
                  label="Properties"
@@ -892,7 +908,7 @@
                  category="sketch"
                  iconRef="sketch.properties"
                  icon="icons/sketch/properties.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.lineStyle.set"
                  label="Set Line Style"
@@ -916,7 +932,7 @@
                  category="sketch"
                  iconRef="sketch.underconstrained"
                  icon="icons/sketch/underconstrained.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.fileSystem"
                  label="File System"
@@ -924,7 +940,7 @@
                  category="sketch"
                  iconRef="ui.file_system"
                  icon="icons/ui/file_system.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== View / Display / Selection ===== -->
@@ -935,7 +951,7 @@
                  category="selection"
                  iconRef="select.select"
                  icon="icons/select/select.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== Sketch-only: dimensions / constraints / modify ===== -->
@@ -963,7 +979,7 @@
                  iconRef="sketch.construction"
                  icon="icons/sketch/construction.svg"
                  gesture="Shift+G"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.ops.toggleLock"
                  label="Toggle Lock"
@@ -990,7 +1006,7 @@
                  category="sketch"
                  iconRef="sketch.text"
                  icon="icons/sketch/text.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== Sketch-only: dimensions / constraints / modify ===== -->
@@ -1001,7 +1017,7 @@
                  category="sketch.modify"
                  iconRef="sketch.project"
                  icon="icons/sketch/project.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.thicken"
                  label="Thicken"
@@ -1009,7 +1025,7 @@
                  category="sketch.modify"
                  iconRef="sketch.thicken"
                  icon="icons/sketch/thicken.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.modify"
                  label="Modify"
@@ -1017,7 +1033,7 @@
                  category="sketch.modify"
                  iconRef="sketch.modify"
                  icon="icons/sketch/modify.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.deleteSegment"
                  label="Delete Segment"
@@ -1025,7 +1041,7 @@
                  category="sketch.modify"
                  iconRef="sketch.delete_segment"
                  icon="icons/sketch/delete_segment.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.divide"
                  label="Divide"
@@ -1033,7 +1049,7 @@
                  category="sketch.modify"
                  iconRef="sketch.divide"
                  icon="icons/sketch/divide.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.corner"
                  label="Corner"
@@ -1041,7 +1057,7 @@
                  category="sketch.modify"
                  iconRef="sketch.corner"
                  icon="icons/sketch/corner.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.rotateResize"
                  label="Rotate Resize"
@@ -1049,7 +1065,7 @@
                  category="sketch.modify"
                  iconRef="sketch.rotate_resize"
                  icon="icons/sketch/rotate_resize.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.chamfer"
                  label="Chamfer"
@@ -1057,7 +1073,7 @@
                  category="sketch.modify"
                  iconRef="sketch.chamfer"
                  icon="icons/sketch/chamfer.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.modify.chamferTrim"
                  label="Chamfer Trim"
@@ -1065,7 +1081,7 @@
                  category="sketch.modify"
                  iconRef="sketch.chamfer_trim"
                  icon="icons/sketch/chamfer_trim.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.fillet.circular"
                  label="Circular"
@@ -1073,7 +1089,7 @@
                  category="sketch.modify"
                  iconRef="sketch.fillet_circular"
                  icon="icons/sketch/fillet_circular.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.fillet.circularTrim"
                  label="Circular Trim"
@@ -1081,7 +1097,7 @@
                  category="sketch.modify"
                  iconRef="sketch.fillet_circular_trim"
                  icon="icons/sketch/fillet_circular_trim.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.fillet.elliptical"
                  label="Elliptical"
@@ -1089,7 +1105,7 @@
                  category="sketch.modify"
                  iconRef="sketch.fillet_elliptical"
                  icon="icons/sketch/fillet_elliptical.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.fillet.ellipticalTrim"
                  label="Elliptical Trim"
@@ -1097,7 +1113,7 @@
                  category="sketch.modify"
                  iconRef="sketch.fillet_elliptical_trim"
                  icon="icons/sketch/fillet_elliptical_trim.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== Model tab: Sketch ===== -->
@@ -1108,7 +1124,7 @@
                  category="sketch"
                  iconRef="sketch.feature_requirements"
                  icon="icons/sketch/feature_requirements.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.inspect.intersectionPoint"
                  label="Intersection Point"
@@ -1116,7 +1132,7 @@
                  category="sketch"
                  iconRef="sketch.inspect_intersection"
                  icon="icons/sketch/inspect_intersection.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.inspect.tangencyPoint"
                  label="Tangency Point"
@@ -1124,7 +1140,7 @@
                  category="sketch"
                  iconRef="sketch.inspect_tangency"
                  icon="icons/sketch/inspect_tangency.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.inspect.entity"
                  label="Entity"
@@ -1132,7 +1148,31 @@
                  category="sketch"
                  iconRef="sketch.inspect_entity"
                  icon="icons/sketch/inspect_entity.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.inspect.overlappingGeometry"
+                 label="Overlapping Geometry"
+                 tooltip="Check for overlapping geometry"
+                 category="sketch"
+                 iconRef="sketch.inspect_overlapping_geometry"
+                 icon="icons/sketch/inspect_overlapping_geometry.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.inspect.highlightOpenEnds"
+                 label="Highlight Open Ends"
+                 tooltip="Highlight open ends"
+                 category="sketch"
+                 iconRef="sketch.inspect_highlight_open_ends"
+                 icon="icons/sketch/inspect_highlight_open_ends.svg"
+                 environments="workbench.part,workbench.sketch"/>
+
+        <command id="sketch.inspect.shadeClosedLoops"
+                 label="Shade Closed Loops"
+                 tooltip="Shade closed loops"
+                 category="sketch"
+                 iconRef="sketch.inspect_shade_closed_loops"
+                 icon="icons/sketch/inspect_shade_closed_loops.svg"
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== UI built-in commands (wired to MainWindowQt) ===== -->
@@ -1143,7 +1183,7 @@
                  category="ui"
                  iconRef="ui.ok"
                  icon="icons/ui/ok.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
         <command id="sketch.cancel"
                  label="Cancel"
@@ -1151,7 +1191,7 @@
                  category="ui"
                  iconRef="ui.cancel"
                  icon="icons/ui/cancel.svg"
-                 environments="workbench.sketch"/>
+                 environments="workbench.part,workbench.sketch"/>
 
 
         <!-- ===== Assembly: components / constraints / exploded views ===== -->
@@ -1170,7 +1210,7 @@
                  category="assembly"
                  iconRef="asm.new_component"
                  icon="icons/asm/new_component.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.replaceComponent"
                  label="Replace Component"
@@ -1178,7 +1218,7 @@
                  category="assembly"
                  iconRef="asm.replace_component"
                  icon="icons/asm/replace_component.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.arrange"
                  label="Arrange Components"
@@ -1186,7 +1226,7 @@
                  category="assembly"
                  iconRef="asm.arrange"
                  icon="icons/asm/arrange.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.constraint"
                  label="Assembly Constraints"
@@ -1194,7 +1234,7 @@
                  category="assembly"
                  iconRef="asm.constraint"
                  icon="icons/asm/constraint.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.align"
                  label="Align"
@@ -1202,7 +1242,7 @@
                  category="assembly"
                  iconRef="asm.align"
                  icon="icons/asm/align.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.mate"
                  label="Mate"
@@ -1210,7 +1250,7 @@
                  category="assembly"
                  iconRef="asm.mate"
                  icon="icons/asm/mate.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.distance"
                  label="Distance"
@@ -1218,7 +1258,7 @@
                  category="assembly"
                  iconRef="asm.distance"
                  icon="icons/asm/distance.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="asm.explode"
                  label="Exploded View"
@@ -1431,7 +1471,7 @@
                  category="analysis"
                  iconRef="analysis.interference"
                  icon="icons/analysis/interference.svg"
-                 environments="workbench.assembly"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="analysis.mass"
                  label="Mass Analysis"
@@ -1642,7 +1682,7 @@
                  category="application"
                  iconRef="app.sheet_metal"
                  icon="icons/app/sheet_metal.svg"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="app.switch.sketch"
                  label="Sketch Environment"
@@ -1702,6 +1742,14 @@
                  icon="icons/model/regenerate.svg"
                  environments="workbench.part,workbench.assembly"/>
 
+        <command id="model.regenerateAll"
+                 label="Regenerate All"
+                 tooltip="Regenerate all features to update the model"
+                 category="model.ops"
+                 iconRef="model.regenerate_all"
+                 icon="icons/model/regenerate_all.svg"
+                 environments="workbench.part,workbench.assembly"/>
+
         <command id="model.delete"
                  label="Delete"
                  tooltip="Delete selected features or geometry"
@@ -1733,6 +1781,54 @@
                  category="feature"
                  iconRef="model.feature_delete"
                  icon="icons/model/feature_delete.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.editDefinition"
+                 label="Edit Definition"
+                 tooltip="Edit feature definition"
+                 category="feature"
+                 iconRef="model.feature_edit_definition"
+                 icon="icons/model/feature_edit_definition.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.editReferences"
+                 label="Edit References"
+                 tooltip="Edit feature references"
+                 category="feature"
+                 iconRef="model.feature_edit_references"
+                 icon="icons/model/feature_edit_references.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.replaceReferences"
+                 label="Replace References"
+                 tooltip="Replace feature references"
+                 category="feature"
+                 iconRef="model.feature_replace_references"
+                 icon="icons/model/feature_replace_references.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.replace"
+                 label="Replace"
+                 tooltip="Replace the selected feature"
+                 category="feature"
+                 iconRef="model.feature_replace"
+                 icon="icons/model/feature_replace.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.reorder"
+                 label="Reorder"
+                 tooltip="Reorder features"
+                 category="feature"
+                 iconRef="model.feature_reorder"
+                 icon="icons/model/feature_reorder.svg"
+                 environments="workbench.part"/>
+
+        <command id="model.feature.readOnly"
+                 label="Read Only"
+                 tooltip="Set feature read-only state"
+                 category="feature"
+                 iconRef="model.feature_read_only"
+                 icon="icons/model/feature_read_only.svg"
                  environments="workbench.part"/>
 
 
@@ -1928,7 +2024,7 @@
                  iconRef="model.extrude"
                  icon="icons/model/extrude.svg"
                  gesture="Ctrl+E"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="model.revolve"
                  label="Revolve"
@@ -1937,7 +2033,7 @@
                  iconRef="model.revolve"
                  icon="icons/model/revolve.svg"
                  gesture="Ctrl+R"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
 <command id="model.sweep"
                  label="Sweep"
@@ -1996,7 +2092,7 @@
                  category="engineering"
                  iconRef="model.hole"
                  icon="icons/model/hole.svg"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="model.shell"
                  label="Shell"
@@ -2020,7 +2116,7 @@
                  category="engineering"
                  iconRef="model.chamfer"
                  icon="icons/model/chamfer.svg"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
 <command id="model.round"
                  label="Round"
@@ -2028,7 +2124,7 @@
                  category="engineering"
                  iconRef="model.round"
                  icon="icons/model/round.svg"
-                 environments="workbench.part"/>
+                 environments="workbench.part,workbench.assembly"/>
 
         <command id="model.round.auto"
                  label="Auto Round"
@@ -2408,6 +2504,30 @@
                  category="modelIntent"
                  iconRef="model_intent.parameters"
                  icon="icons/model_intent/parameters.svg"
+                 environments="workbench.part,workbench.assembly"/>
+
+        <command id="modelIntent.program"
+                 label="Program"
+                 tooltip="Program model intent"
+                 category="modelIntent"
+                 iconRef="model_intent.program"
+                 icon="icons/model_intent/program.svg"
+                 environments="workbench.part,workbench.assembly"/>
+
+        <command id="modelIntent.designate"
+                 label="Designate"
+                 tooltip="Designate model intent"
+                 category="modelIntent"
+                 iconRef="model_intent.designate"
+                 icon="icons/model_intent/designate.svg"
+                 environments="workbench.part,workbench.assembly"/>
+
+        <command id="modelIntent.declare"
+                 label="Declare"
+                 tooltip="Declare model intent"
+                 category="modelIntent"
+                 iconRef="model_intent.declare"
+                 icon="icons/model_intent/declare.svg"
                  environments="workbench.part,workbench.assembly"/>
 
         <command id="modelIntent.switchDimensions"
