@@ -151,6 +151,12 @@ namespace sdr
 
         // === Category: feature ===
         inline constexpr std::string_view MODEL_FEATURE_DELETE           = "model.feature.delete"; // Delete Feature
+        inline constexpr std::string_view MODEL_FEATURE_EDITDEFINITION   = "model.feature.editDefinition"; // Edit Definition
+        inline constexpr std::string_view MODEL_FEATURE_EDITREFERENCES   = "model.feature.editReferences"; // Edit References
+        inline constexpr std::string_view MODEL_FEATURE_READONLY         = "model.feature.readOnly"; // Read Only
+        inline constexpr std::string_view MODEL_FEATURE_REORDER          = "model.feature.reorder"; // Reorder
+        inline constexpr std::string_view MODEL_FEATURE_REPLACE          = "model.feature.replace"; // Replace
+        inline constexpr std::string_view MODEL_FEATURE_REPLACEREFERENCES = "model.feature.replaceReferences"; // Replace References
         inline constexpr std::string_view MODEL_FEATURE_SUPPRESS         = "model.feature.suppress"; // Suppress
         inline constexpr std::string_view MODEL_FEATURE_UNSUPPRESS       = "model.feature.unsuppress"; // Resume
 
@@ -193,11 +199,15 @@ namespace sdr
         // === Category: model.ops ===
         inline constexpr std::string_view MODEL_DELETE                   = "model.delete"; // Delete
         inline constexpr std::string_view MODEL_REGENERATE               = "model.regenerate"; // Regenerate
+        inline constexpr std::string_view MODEL_REGENERATEALL            = "model.regenerateAll"; // Regenerate All
 
         // === Category: modelIntent ===
         inline constexpr std::string_view MODELINTENT_COMPONENTINTERFACE = "modelIntent.componentInterface"; // Component Interface
+        inline constexpr std::string_view MODELINTENT_DECLARE            = "modelIntent.declare"; // Declare
+        inline constexpr std::string_view MODELINTENT_DESIGNATE          = "modelIntent.designate"; // Designate
         inline constexpr std::string_view MODELINTENT_FAMILYTABLE        = "modelIntent.familyTable"; // Family Table
         inline constexpr std::string_view MODELINTENT_PARAMETERS         = "modelIntent.parameters"; // Parameters
+        inline constexpr std::string_view MODELINTENT_PROGRAM            = "modelIntent.program"; // Program
         inline constexpr std::string_view MODELINTENT_PUBLISHGEOMETRY    = "modelIntent.publishGeometry"; // Publish Geometry
         inline constexpr std::string_view MODELINTENT_SWITCHDIMENSIONS   = "modelIntent.switchDimensions"; // Switch Dimensions
 
@@ -254,7 +264,10 @@ namespace sdr
         inline constexpr std::string_view SKETCH_GRIDSETTINGS            = "sketch.gridSettings"; // Grid Settings
         inline constexpr std::string_view SKETCH_INSPECT_ENTITY          = "sketch.inspect.entity"; // Entity
         inline constexpr std::string_view SKETCH_INSPECT_FEATUREREQUIREMENTS = "sketch.inspect.featureRequirements"; // Feature Requirements
+        inline constexpr std::string_view SKETCH_INSPECT_HIGHLIGHTOPENENDS = "sketch.inspect.highlightOpenEnds"; // Highlight Open Ends
         inline constexpr std::string_view SKETCH_INSPECT_INTERSECTIONPOINT = "sketch.inspect.intersectionPoint"; // Intersection Point
+        inline constexpr std::string_view SKETCH_INSPECT_OVERLAPPINGGEOMETRY = "sketch.inspect.overlappingGeometry"; // Overlapping Geometry
+        inline constexpr std::string_view SKETCH_INSPECT_SHADECLOSEDLOOPS = "sketch.inspect.shadeClosedLoops"; // Shade Closed Loops
         inline constexpr std::string_view SKETCH_INSPECT_TANGENCYPOINT   = "sketch.inspect.tangencyPoint"; // Tangency Point
         inline constexpr std::string_view SKETCH_LINESTYLE_CLEAR         = "sketch.lineStyle.clear"; // Clear Line Style
         inline constexpr std::string_view SKETCH_LINESTYLE_SET           = "sketch.lineStyle.set"; // Set Line Style
@@ -286,16 +299,19 @@ namespace sdr
         inline constexpr std::string_view SKETCH_CONSTRAINT_VERTICAL     = "sketch.constraint.vertical"; // Vertical
 
         // === Category: sketch.dim ===
-        inline constexpr std::string_view SKETCH_DIM_ANGLE               = "sketch.dim.angle"; // Angular Dimension
+        inline constexpr std::string_view SKETCH_DIM_ANGLE               = "sketch.dim.angle"; // Angle
         inline constexpr std::string_view SKETCH_DIM_BASELINE            = "sketch.dim.baseline"; // Baseline
-        inline constexpr std::string_view SKETCH_DIM_DIAMETER            = "sketch.dim.diameter"; // Diameter Dimension
+        inline constexpr std::string_view SKETCH_DIM_DIAMETER            = "sketch.dim.diameter"; // Diameter
         inline constexpr std::string_view SKETCH_DIM_DIMENSION           = "sketch.dim.dimension"; // Dimension
-        inline constexpr std::string_view SKETCH_DIM_GENERAL             = "sketch.dim.general"; // Smart Dimension
-        inline constexpr std::string_view SKETCH_DIM_HORIZONTAL          = "sketch.dim.horizontal"; // Horizontal Dimension
+        inline constexpr std::string_view SKETCH_DIM_GENERAL             = "sketch.dim.general"; // General
+        inline constexpr std::string_view SKETCH_DIM_HORIZONTAL          = "sketch.dim.horizontal"; // Horizontal
         inline constexpr std::string_view SKETCH_DIM_PERIMETER           = "sketch.dim.perimeter"; // Perimeter
-        inline constexpr std::string_view SKETCH_DIM_RADIUS              = "sketch.dim.radius"; // Radius Dimension
+        inline constexpr std::string_view SKETCH_DIM_RADIUS              = "sketch.dim.radius"; // Radius
         inline constexpr std::string_view SKETCH_DIM_REFERENCE           = "sketch.dim.reference"; // Reference
-        inline constexpr std::string_view SKETCH_DIM_VERTICAL            = "sketch.dim.vertical"; // Vertical Dimension
+        inline constexpr std::string_view SKETCH_DIM_VERTICAL            = "sketch.dim.vertical"; // Vertical
+
+        // === Category: sketch.mode ===
+        inline constexpr std::string_view SKETCH_CONSTRUCTIONMODE        = "sketch.constructionMode"; // Construction Mode
 
         // === Category: sketch.modify ===
         inline constexpr std::string_view SKETCH_FILLET_CIRCULAR         = "sketch.fillet.circular"; // Circular
@@ -322,6 +338,9 @@ namespace sdr
         inline constexpr std::string_view SKETCH_OPS_TOGGLELOCK          = "sketch.ops.toggleLock"; // Toggle Lock
         inline constexpr std::string_view SKETCH_PROJECT                 = "sketch.project"; // Project
         inline constexpr std::string_view SKETCH_THICKEN                 = "sketch.thicken"; // Thicken
+
+        // === Category: sketch.ui ===
+        inline constexpr std::string_view SKETCH_PALETTE                 = "sketch.palette"; // Palette
 
         // === Category: surface ===
         inline constexpr std::string_view SURFACE_BOUNDARYBLEND          = "surface.boundaryBlend"; // Boundary Blend
